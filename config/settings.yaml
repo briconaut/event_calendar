@@ -1,0 +1,67 @@
+# Zentrale Konfiguration des Event Calendar (siehe docs/spec.md, „Konfiguration“).
+
+timezone: Europe/Berlin
+
+search:
+  horizon_months: 12          # Suchhorizont ab heute
+  christmas_next_season: true # Weihnachtsmärkte immer für die kommende Saison
+
+calendars:
+  weihnachtsmaerkte:
+    name: Weihnachtsmärkte
+    google_id: 8598a72b7cd7a92965ff9a32256eebe3baa28c588ce8c4fbef7c4c479d9dcef9@group.calendar.google.com
+    icon: "🎄"
+  feuerwerke:
+    name: Feuerwerke
+    google_id: j88rdmfng31de2igvodmugjc10@group.calendar.google.com
+    icon: "🎆"                # nur Fallback; maßgeblich sind die show_types-Icons
+  events:
+    name: Events und Feste
+    google_id: 3ae2mk3no4i40dho9irq91ukok@group.calendar.google.com
+    icon: "🎡"                # Fallback; maßgeblich sind die Kategorie-Icons
+
+show_types:
+  pyro: {name: Feuerwerk, icon: "🎆"}
+  drone: {name: Drohnenshow, icon: "🛸"}
+  laser: {name: Lasershow, icon: "🔦"}
+  illumination: {name: Illumination, icon: "💡"}
+
+categories:
+  grossevent: {name: Großevent, icon: "🎉"}
+  jahrmarkt: {name: Jahrmarkt mit Fahrgeschäften, icon: "🎡"}
+  ausstellung: {name: Regionale Ausstellung, icon: "🌷"}
+  parade: {name: Parade / Umzug, icon: "🥁"}
+  weinfest: {name: Weinfest, icon: "🍷"}
+  mittelalter: {name: Mittelalter- / Historienfest, icon: "🏰"}
+  lichtfest: {name: Lichtfest, icon: "✨"}
+  stadtfest: {name: Stadt- / Hafenfest, icon: "🎪"}
+  saisonmarkt: {name: Saisonmarkt, icon: "🧺"}
+
+# Stufe je Kalender: all | major (nur Großevents) | none
+regions:
+  rhein-main:
+    name: Rhein-Main
+    levels: {weihnachtsmaerkte: all, events: all, feuerwerke: all}
+  rheingau-mittelrhein:
+    name: Rheingau / Mittelrhein
+    levels: {weihnachtsmaerkte: all, events: all, feuerwerke: all}
+  rheinhessen-pfalz:
+    name: Rheinhessen / Pfalz
+    levels: {weihnachtsmaerkte: all, events: all, feuerwerke: all}
+  rhein-neckar:
+    name: Rhein-Neckar
+    levels: {weihnachtsmaerkte: all, events: all, feuerwerke: all}
+  rheinland:
+    name: Rheinland
+    levels: {weihnachtsmaerkte: none, events: major, feuerwerke: all}
+  sonstige:
+    name: sonstige
+    levels: {weihnachtsmaerkte: none, events: none, feuerwerke: none}
+
+display:
+  use_default_reminders: false
+  availability: AVAILABILITY_FREE
+  status_prefix:
+    geschätzt: "❓"
+  status_colors:              # Google-Calendar colorId; fehlender Eintrag = Kalenderfarbe
+    geschätzt: "8"            # Graphit (grau)

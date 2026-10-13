@@ -5,7 +5,7 @@
 - ID: 536a86
 - Type: 1
 - Number: 001
-- Status:  
+- Status: X
 - Phase: 001-Geruest
 - review: user
 - assignee-type: agent
@@ -18,3 +18,7 @@
 ## History
 
 - 2026-10-13T11:24:29+00:00: M | Object created
+- 2026-10-13T11:44:26+00:00: M [ ] -> [~] | starting
+- 2026-10-13T11:44:26+00:00: T [~] -> [~] | main existiert auf origin (vom Nutzer angelegt) und steht auf 84f9a02, identisch mit dem Planungs-Branch; kein PR nötig.
+- 2026-10-13T11:44:26+00:00: M [~] -> [R] | Nutzer hat main selbst angelegt; Abnahme durch Nutzer
+- 2026-10-13T11:44:26+00:00: M [R] -> [X] | Nutzer hat main angelegt (Review damit erfolgt)

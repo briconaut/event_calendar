@@ -5,7 +5,7 @@
 - ID: 2d0b84
 - Type: 1
 - Number: 009
-- Status:  
+- Status: X
 - Phase: 001-Geruest
 - review: none
 - assignee-type: agent
@@ -18,3 +18,6 @@
 ## History
 
 - 2026-10-13T11:24:30+00:00: M | Object created
+- 2026-10-13T11:50:49+00:00: M [ ] -> [~] | starting
+- 2026-10-13T11:50:49+00:00: T [~] -> [~] | ec.py new-event, new-location, list (Filter Kalender/Status/Zeitraum, --json).
+- 2026-10-13T11:50:49+00:00: M [~] -> [X] | erledigt

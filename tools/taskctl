@@ -1,0 +1,4 @@
+#!/bin/bash
+# Wrapper für taskctl aus ai-architecture-tools (bereitgestellt vom SessionStart-Hook).
+# Aufruf aus dem Repo-Root, z. B.: tools/taskctl --root docs list
+exec python3 "${ARCH_TOOLS_DIR:-$HOME/ai-architecture-tools}/architecture/scripts/taskctl.py" "$@"

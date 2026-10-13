@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-13T11:24:31.540296+00:00",
+  "updated": "2026-10-13T11:50:52.063604+00:00",
   "objects": {
     "de17e7": {
       "nr": 1,
       "type": "3",
       "name": "Skill event-verify",
-      "status": " ",
+      "status": "R",
       "file": "001-3-de17e7-skill-event-verify.md",
       "meta": {
         "review": "user",
@@ -17,7 +17,7 @@
       "nr": 2,
       "type": "3",
       "name": "Skill series-rollover",
-      "status": " ",
+      "status": "R",
       "file": "002-3-e63e80-skill-series-rollover.md",
       "meta": {
         "review": "user",
@@ -29,7 +29,7 @@
       "nr": 3,
       "type": "3",
       "name": "Prompts Pflege",
-      "status": " ",
+      "status": "X",
       "file": "003-3-bbdfe1-prompts-pflege.md",
       "meta": {
         "review": "none",

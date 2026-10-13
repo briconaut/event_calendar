@@ -5,7 +5,7 @@
 - ID: 95a14f
 - Type: 1
 - Number: 002
-- Status:  
+- Status: R
 - Phase: 001-Geruest
 - review: user
 - assignee-type: agent
@@ -19,3 +19,6 @@
 
 - 2026-10-13T11:24:29+00:00: M | Object created
 - 2026-10-13T11:29:40+00:00: M | Description changed
+- 2026-10-13T11:45:19+00:00: M [ ] -> [~] | starting
+- 2026-10-13T11:45:19+00:00: T [~] -> [~] | Hook .claude/hooks/session-start.sh klont ai-architecture-tools auf f25ae40 nach $HOME/ai-architecture-tools (idempotent, Fehler nur als Warnung); Wrapper tools/specctl und tools/taskctl. Lokal mit frischem Zielverzeichnis getestet. Offen: Erreichbarkeit des Tool-Repos in neuen Web-Sessions ohne manuelles add_repo.
+- 2026-10-13T11:45:19+00:00: M [~] -> [R] | Nutzer prüft, ob der Hook in einer neuen Session das Tool-Repo holen kann

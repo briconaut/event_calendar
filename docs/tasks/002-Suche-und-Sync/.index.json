@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-13T11:24:31.258201+00:00",
+  "updated": "2026-10-13T11:50:51.158816+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
       "type": "2",
       "name": "Skill calendar-sync",
-      "status": " ",
+      "status": "R",
       "file": "001-2-4e90c3-skill-calendar-sync.md",
       "meta": {
         "review": "user",
@@ -17,7 +17,7 @@
       "nr": 2,
       "type": "2",
       "name": "Skill event-search",
-      "status": " ",
+      "status": "R",
       "file": "002-2-1c81b3-skill-event-search.md",
       "meta": {
         "review": "user",
@@ -29,7 +29,7 @@
       "nr": 3,
       "type": "2",
       "name": "Prompts Suche und Sync",
-      "status": " ",
+      "status": "X",
       "file": "003-2-3dba27-prompts-suche-und-sync.md",
       "meta": {
         "review": "none",

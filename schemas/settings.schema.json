@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Event Calendar settings",
+  "type": "object",
+  "required": ["timezone", "search", "calendars", "show_types", "categories", "regions", "display"],
+  "additionalProperties": false,
+  "$defs": {
+    "level": {"enum": ["all", "major", "none"]},
+    "named_icon": {
+      "type": "object",
+      "required": ["name", "icon"],
+      "additionalProperties": false,
+      "properties": {"name": {"type": "string"}, "icon": {"type": "string"}}
+    },
+    "calendar": {
+      "type": "object",
+      "required": ["name", "google_id", "icon"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {"type": "string"},
+        "google_id": {"type": "string", "minLength": 1},
+        "icon": {"type": "string"}
+      }
+    }
+  },
+  "properties": {
+    "timezone": {"type": "string"},
+    "search": {
+      "type": "object",
+      "required": ["horizon_months"],
+      "additionalProperties": false,
+      "properties": {
+        "horizon_months": {"type": "integer", "minimum": 1},
+        "christmas_next_season": {"type": "boolean"}
+      }
+    },
+    "calendars": {
+      "type": "object",
+      "required": ["weihnachtsmaerkte", "feuerwerke", "events"],
+      "additionalProperties": false,
+      "properties": {
+        "weihnachtsmaerkte": {"$ref": "#/$defs/calendar"},
+        "feuerwerke": {"$ref": "#/$defs/calendar"},
+        "events": {"$ref": "#/$defs/calendar"}
+      }
+    },
+    "show_types": {
+      "type": "object",
+      "propertyNames": {"enum": ["pyro", "drone", "laser", "illumination"]},
+      "additionalProperties": {"$ref": "#/$defs/named_icon"}
+    },
+    "categories": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9-]+$"},
+      "additionalProperties": {"$ref": "#/$defs/named_icon"}
+    },
+    "regions": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z0-9-]+$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "levels"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string"},
+          "levels": {
+            "type": "object",
+            "required": ["weihnachtsmaerkte", "feuerwerke", "events"],
+            "additionalProperties": false,
+            "properties": {
+              "weihnachtsmaerkte": {"$ref": "#/$defs/level"},
+              "feuerwerke": {"$ref": "#/$defs/level"},
+              "events": {"$ref": "#/$defs/level"}
+            }
+          }
+        }
+      }
+    },
+    "display": {
+      "type": "object",
+      "required": ["use_default_reminders", "availability", "status_prefix", "status_colors"],
+      "additionalProperties": false,
+      "properties": {
+        "use_default_reminders": {"type": "boolean"},
+        "availability": {"enum": ["AVAILABILITY_FREE", "AVAILABILITY_BUSY"]},
+        "status_prefix": {"type": "object", "additionalProperties": {"type": "string"}},
+        "status_colors": {"type": "object", "additionalProperties": {"type": "string"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Location (Stadt/Gemeinde) mit Eventserien",
+  "type": "object",
+  "required": ["name", "state", "region"],
+  "additionalProperties": false,
+  "$defs": {
+    "url": {"type": "string", "pattern": "^https?://"}
+  },
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "state": {"type": "string", "minLength": 1},
+    "region": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+    "include": {"type": "boolean"},
+    "exclude": {"type": "boolean"},
+    "notes": {"type": "string"},
+    "series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "calendar"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "name": {"type": "string", "minLength": 1},
+          "calendar": {"enum": ["weihnachtsmaerkte", "feuerwerke", "events"]},
+          "category": {"type": "string"},
+          "major": {"type": "boolean"},
+          "homepage": {"$ref": "#/$defs/url"},
+          "sources": {"type": "array", "items": {"$ref": "#/$defs/url"}},
+          "typical_period": {"type": "string"},
+          "has_fireworks": {"type": "boolean"},
+          "directions": {"type": "string"},
+          "viewpoints": {"type": "array", "items": {"type": "string"}}
+        }
+      }
+    }
+  }
+}

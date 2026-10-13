@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-13T11:29:40.399084+00:00",
+  "updated": "2026-10-13T11:50:50.225582+00:00",
   "objects": {
     "536a86": {
       "nr": 1,
       "type": "1",
       "name": "main-Branch herstellen",
-      "status": " ",
+      "status": "X",
       "file": "001-1-536a86-main-branch-herstellen.md",
       "meta": {
         "review": "user",
@@ -17,7 +17,7 @@
       "nr": 2,
       "type": "1",
       "name": "Architektur-Tools bereitstellen",
-      "status": " ",
+      "status": "R",
       "file": "002-1-95a14f-architektur-tools-bereitstellen.md",
       "meta": {
         "review": "user",
@@ -29,7 +29,7 @@
       "nr": 3,
       "type": "1",
       "name": "Repo-Struktur anlegen",
-      "status": " ",
+      "status": "X",
       "file": "003-1-eead2c-repo-struktur-anlegen.md",
       "meta": {
         "review": "none",
@@ -41,7 +41,7 @@
       "nr": 4,
       "type": "1",
       "name": "requirements.txt und SessionStart-Hook",
-      "status": " ",
+      "status": "X",
       "file": "004-1-036e4f-requirements-txt-und-sessionstart-hook.md",
       "meta": {
         "review": "none",
@@ -53,7 +53,7 @@
       "nr": 5,
       "type": "1",
       "name": "JSON-Schemas",
-      "status": " ",
+      "status": "X",
       "file": "005-1-b0e4be-json-schemas.md",
       "meta": {
         "review": "none",
@@ -65,7 +65,7 @@
       "nr": 6,
       "type": "1",
       "name": "settings.yaml",
-      "status": " ",
+      "status": "X",
       "file": "006-1-59e09d-settings-yaml.md",
       "meta": {
         "review": "none",
@@ -77,7 +77,7 @@
       "nr": 7,
       "type": "1",
       "name": "ec.py validate",
-      "status": " ",
+      "status": "X",
       "file": "007-1-7efee4-ec-py-validate.md",
       "meta": {
         "review": "none",
@@ -89,7 +89,7 @@
       "nr": 8,
       "type": "1",
       "name": "ec.py render",
-      "status": " ",
+      "status": "X",
       "file": "008-1-829f6f-ec-py-render.md",
       "meta": {
         "review": "none",
@@ -101,7 +101,7 @@
       "nr": 9,
       "type": "1",
       "name": "ec.py new-event, new-location, list",
-      "status": " ",
+      "status": "X",
       "file": "009-1-2d0b84-ec-py-new-event-new-location-list.md",
       "meta": {
         "review": "none",
@@ -113,7 +113,7 @@
       "nr": 10,
       "type": "1",
       "name": "Tests f\u00fcr ec.py",
-      "status": " ",
+      "status": "C",
       "file": "010-1-e2b915-tests-f-r-ec-py.md",
       "meta": {
         "review": "subagent",
@@ -125,7 +125,7 @@
       "nr": 11,
       "type": "1",
       "name": "CLAUDE.md",
-      "status": " ",
+      "status": "R",
       "file": "011-1-5a0368-claude-md.md",
       "meta": {
         "review": "user",

@@ -89,7 +89,7 @@ history:
 -->
 
 Keine Weihnachtsmärkte, keine Kerben/Dorffeste. Events, die eine Show enthalten, verweisen auf
-den bzw. die Termine im Feuerwerkskalender. Icon: 🎡 (ggf. je Kategorie verfeinert in `settings.yaml`).
+den bzw. die Termine im Feuerwerkskalender. Icon je Kategorie (siehe `settings.yaml`).
 
 #### Kategorien
 
@@ -208,7 +208,8 @@ von `parent`-Referenzen. Vergangene Events bleiben als Historie im Repo.
 | `description`, `opening_hours` | Freitext, Öffnungszeiten |
 | `directions` | lokale Anfahrt/Zugang |
 | `viewpoints` | Aussichtspunkte |
-| `parent` | Event-ID des übergeordneten Events (optional) |
+| `parent` | Event-ID des übergeordneten Events (optional, nur `feuerwerke`) |
+| `status_note` | Begründung/Hinweis zum Status (z. B. Herleitung eines geschätzten Datums) |
 | `sources`, `checked_at` | Nachweis-URLs, Datum der letzten Prüfung |
 
 #### Herkunft lokaler Infos
@@ -232,7 +233,7 @@ history:
 Datei `config/locations/<ort>.yaml`. Eine Location ist eine **Stadt oder Gemeinde**; konkrete Plätze
 stehen im Event (`venue`). Events über mehrere Orte hängen an einer Haupt-Location.
 
-- `name`, `state` (Bundesland), `region`, `include`/`exclude`
+- `name`, `state` (Bundesland), `region`, `include`/`exclude`, `notes` (Freitext, z. B. eingestellte Serien)
 - `series`: Liste der Eventserien mit `id`, `name`, `calendar`, `category`, `major`, `homepage`,
   `sources` (Such-URLs), `typical_period` (z. B. „1. Juli-Wochenende“), `has_fireworks`,
   Default-`directions`/`viewpoints`
