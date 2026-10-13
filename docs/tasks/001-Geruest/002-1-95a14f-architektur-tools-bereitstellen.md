@@ -13,8 +13,9 @@
 
 ## Architektur-Tools bereitstellen
 
-> specctl/taskctl für künftige Sessions verfügbar machen (Entscheidung siehe OpenQuestion in „Tools“).
+> SessionStart-Hook in `.claude/settings.json` ergänzen: `com-gft-tsbo-source/ai-architecture-tools` shallow auf Commit `f25ae40a696037be4b9b6507c14cb08abbb73256` klonen (idempotent, nur wenn noch nicht vorhanden) und `specctl`/`taskctl` aufrufbar machen. Prüfen, dass das Tool-Repo in Web-Sessions per Git erreichbar ist.
 
 ## History
 
 - 2026-10-13T11:24:29+00:00: M | Object created
+- 2026-10-13T11:29:40+00:00: M | Description changed

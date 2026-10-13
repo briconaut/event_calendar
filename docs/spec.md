@@ -292,9 +292,6 @@ Fallback bei Problemen mit vielen Terminen: direktes Skript gegen die Google Cal
 ## Tools
 
 <!-- specctl id=93b5ed type=Tools_ nr=008 status=draft
-open-questions:
-> Wie werden specctl/taskctl (ai-architecture-tools) in künftigen Web-Sessions bereitgestellt:
-> ins Repo vendoren oder per SessionStart-Hook klonen?
 history:
 - 2026-10-13T11:24:28+00:00: M | Add
 -->
@@ -307,6 +304,12 @@ history:
 | `render [--calendar X] [--from <datum>]` | Soll-Zustand als kompaktes JSON (Titel, Zeiten, Beschreibung, Farbe, Hash) |
 | `new-event` / `new-location` | Gerüst mit korrektem Dateinamen/ID |
 | `list` | Übersichten, z. B. alle `geschätzt`-Termine der nächsten 3 Monate |
+
+**Architektur-Tools (specctl, taskctl):** Sie stammen aus `com-gft-tsbo-source/ai-architecture-tools`
+und werden nicht ins Repo kopiert. Ein SessionStart-Hook klont das Repo auf einen **fest gepinnten Commit**
+(`f25ae40a696037be4b9b6507c14cb08abbb73256`), damit das Dateiformat stabil bleibt. Ein Update ist eine
+bewusste Änderung des Pins. Voraussetzung: Das Tool-Repo ist in der Session per Git erreichbar.
+Aufruf: `specctl --root docs …` (Spec in `docs/spec.md`), `taskctl --root docs …` (Tasks in `docs/tasks/`).
 
 ## Skills
 
