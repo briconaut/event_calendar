@@ -1,0 +1,101 @@
+{
+  "updated": "2026-10-13T11:24:31.258201+00:00",
+  "objects": {
+    "4e90c3": {
+      "nr": 1,
+      "type": "2",
+      "name": "Skill calendar-sync",
+      "status": " ",
+      "file": "001-2-4e90c3-skill-calendar-sync.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Synchronisation"
+      }
+    },
+    "1c81b3": {
+      "nr": 2,
+      "type": "2",
+      "name": "Skill event-search",
+      "status": " ",
+      "file": "002-2-1c81b3-skill-event-search.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Skills"
+      }
+    },
+    "3dba27": {
+      "nr": 3,
+      "type": "2",
+      "name": "Prompts Suche und Sync",
+      "status": " ",
+      "file": "003-2-3dba27-prompts-suche-und-sync.md",
+      "meta": {
+        "review": "none",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Prompts"
+      }
+    },
+    "541372": {
+      "nr": 4,
+      "type": "2",
+      "name": "Kalender vorbereiten",
+      "status": " ",
+      "file": "004-2-541372-kalender-vorbereiten.md",
+      "meta": {
+        "review": "none",
+        "assignee-type": "user",
+        "source": "docs/spec.md#Manuelle Schritte"
+      }
+    },
+    "d1e48e": {
+      "nr": 5,
+      "type": "2",
+      "name": "Erste Suche Weihnachtsm\u00e4rkte",
+      "status": " ",
+      "file": "005-2-d1e48e-erste-suche-weihnachtsm-rkte.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Kalender/Weihnachtsm\u00e4rkte"
+      }
+    },
+    "9a7221": {
+      "nr": 6,
+      "type": "2",
+      "name": "Erste Suche Feuerwerke",
+      "status": " ",
+      "file": "006-2-9a7221-erste-suche-feuerwerke.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Kalender/Feuerwerke"
+      }
+    },
+    "de5a72": {
+      "nr": 7,
+      "type": "2",
+      "name": "Erste Suche Events und Feste",
+      "status": " ",
+      "file": "007-2-de5a72-erste-suche-events-und-feste.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Kalender/Events und Feste"
+      }
+    },
+    "33787e": {
+      "nr": 8,
+      "type": "2",
+      "name": "Erster Sync",
+      "status": " ",
+      "file": "008-2-33787e-erster-sync.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Synchronisation"
+      }
+    }
+  }
+}

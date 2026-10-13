@@ -1,0 +1,41 @@
+{
+  "updated": "2026-10-13T11:24:31.785867+00:00",
+  "objects": {
+    "d241a3": {
+      "nr": 1,
+      "type": "4",
+      "name": "Routine Weihnachtsm\u00e4rkte",
+      "status": " ",
+      "file": "001-4-d241a3-routine-weihnachtsm-rkte.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Arbeitsweise"
+      }
+    },
+    "2a8d84": {
+      "nr": 2,
+      "type": "4",
+      "name": "Routine Feuerwerke und Events",
+      "status": " ",
+      "file": "002-4-2a8d84-routine-feuerwerke-und-events.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Arbeitsweise"
+      }
+    },
+    "8b0d95": {
+      "nr": 3,
+      "type": "4",
+      "name": "Routine Rollover",
+      "status": " ",
+      "file": "003-4-8b0d95-routine-rollover.md",
+      "meta": {
+        "review": "user",
+        "assignee-type": "agent",
+        "source": "docs/spec.md#Arbeitsweise"
+      }
+    }
+  }
+}
