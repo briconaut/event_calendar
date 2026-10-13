@@ -24,6 +24,19 @@ Aufgaben und ihre Skills:
 
 Fertige Aufträge für Sessions und Routinen liegen in `prompts/`.
 
+## Arbeit am Umsetzungsplan (`docs/tasks/`)
+
+Der Plan wird **sequenziell** abgearbeitet, mit dem Skill `taskctl-worker-cli` (CLI `tools/taskctl`,
+Root `docs`):
+
+1. Die nächste Task liefert ausschließlich `tools/taskctl --root docs --json next`.
+2. Ist sie offen: beginnen (`~`), bearbeiten, mit `annotate` protokollieren, Ergebnis setzen.
+3. Steht sie auf `R`, `C` oder `B`, ist der Plan **blockiert**: Stand berichten und auf den Nutzer warten.
+   Die Abnahme einer `R`-Task setzt der Nutzer.
+
+`--force`, `--set-status` und direkte Änderungen an `docs/tasks/` sind dem Nutzer vorbehalten.
+Der PreToolUse-Hook `.claude/hooks/task-guard.py` setzt diese Regeln durch.
+
 ## Was in welchen Kalender gehört
 
 **Weihnachtsmärkte** (`weihnachtsmaerkte`): mehrtägige Märkte von Stadt, Gemeinde oder Veranstalter,
