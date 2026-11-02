@@ -1,11 +1,11 @@
 {
-  "updated": "2026-10-13T11:50:51.158816+00:00",
+  "updated": "2026-11-02T16:17:02.217224+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
       "type": "2",
       "name": "Skill calendar-sync",
-      "status": "R",
+      "status": "X",
       "file": "001-2-4e90c3-skill-calendar-sync.md",
       "meta": {
         "review": "user",
@@ -17,7 +17,7 @@
       "nr": 2,
       "type": "2",
       "name": "Skill event-search",
-      "status": "R",
+      "status": "X",
       "file": "002-2-1c81b3-skill-event-search.md",
       "meta": {
         "review": "user",

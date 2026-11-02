@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T15:45:42.093051+00:00",
+  "updated": "2026-11-02T16:13:45.968437+00:00",
   "objects": {
     "536a86": {
       "nr": 1,
@@ -113,7 +113,7 @@
       "nr": 11,
       "type": "1",
       "name": "CLAUDE.md",
-      "status": "R",
+      "status": "X",
       "file": "011-1-5a0368-claude-md.md",
       "meta": {
         "review": "user",

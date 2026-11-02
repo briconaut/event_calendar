@@ -5,7 +5,7 @@
 - ID: 4e90c3
 - Type: 2
 - Number: 001
-- Status: R
+- Status: X
 - Phase: 002-Suche-und-Sync
 - review: user
 - assignee-type: agent
@@ -21,3 +21,6 @@
 - 2026-10-13T11:50:50+00:00: M [ ] -> [~] | starting
 - 2026-10-13T11:50:50+00:00: T [~] -> [~] | .claude/skills/calendar-sync/SKILL.md: Soll/Ist über Fußzeile, Klassen neu/geändert/Farbe/verwaist/fremd/doppelt, Prüfung ganztägiges Ende beim ersten Sync.
 - 2026-10-13T11:50:50+00:00: M [~] -> [R] | Abnahme durch Nutzer
+- 2026-11-02T16:16:32+00:00: M [R] -> [X] |
+  > USER-APPROVED: YES
+  > Sieht gut aus.
