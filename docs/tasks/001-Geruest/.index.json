@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T11:50:50.225582+00:00",
+  "updated": "2026-11-02T15:45:42.093051+00:00",
   "objects": {
     "536a86": {
       "nr": 1,
@@ -11,18 +11,6 @@
         "review": "user",
         "assignee-type": "agent",
         "source": "docs/spec.md#Arbeitsweise"
-      }
-    },
-    "95a14f": {
-      "nr": 2,
-      "type": "1",
-      "name": "Architektur-Tools bereitstellen",
-      "status": "R",
-      "file": "002-1-95a14f-architektur-tools-bereitstellen.md",
-      "meta": {
-        "review": "user",
-        "assignee-type": "agent",
-        "source": "docs/spec.md#Tools"
       }
     },
     "eead2c": {

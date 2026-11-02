@@ -1,6 +1,6 @@
 # Event Calendar – Spezifikation
 
-Ergebnis der Planungssitzung vom 2026-10-13. Grundsatz: **Das Repository ist führend**, die Google-Kalender werden ausschließlich aus den hier abgelegten Daten befüllt bzw. bereinigt. Umsetzungsplan: taskctl-Store unter `docs/tasks/`.
+Ergebnis der Planungssitzung vom 2026-10-13. Grundsatz: **Das Repository ist führend**, die Google-Kalender werden ausschließlich aus den hier abgelegten Daten befüllt bzw. bereinigt. Umsetzungsplan: `docs/tasks/` (derzeit ohne Werkzeugunterstützung, Aufräumen steht aus).
 
 ## Ziel und Randbedingungen
 
@@ -171,7 +171,8 @@ Format: **YAML**, validiert per JSON-Schema. Schlüssel englisch, Inhalte deutsc
 ```
 CLAUDE.md                              # Grundregeln, Definitionen, Arbeitsablauf
 requirements.txt                       # pyyaml, jsonschema
-.claude/settings.json                  # SessionStart-Hook: pip install -r requirements.txt
+.claude/settings.json                  # registriert den SessionStart-Hook
+.claude/hooks/session-start.sh         # pip install -r requirements.txt
 .claude/skills/<skill>/SKILL.md        # event-search, event-verify, series-rollover, calendar-sync
 config/settings.yaml                   # Kalender-IDs, Regionen, Kategorien, Icons, Horizont
 config/locations/<ort>.yaml            # Orte + Eventserien
@@ -180,7 +181,8 @@ schemas/{event,location,settings}.schema.json
 tools/ec.py                            # CLI
 tests/
 prompts/*.md                           # fertige Aufträge für Sessions und Routinen
-docs/spec.md, docs/tasks/              # diese Spec (specctl) und der Umsetzungsplan (taskctl)
+README.md                              # Einstieg
+docs/spec.md, docs/tasks/              # diese Spec und der Umsetzungsplan (derzeit ohne Werkzeugunterstützung)
 ```
 
 ### Event
@@ -249,6 +251,7 @@ history:
 
 `config/settings.yaml` enthält:
 
+- Zeitzone (`Europe/Berlin`)
 - Google-Kalender-IDs der drei Kalender
 - Regionen und Stufen je Kalender (siehe „Regionen“)
 - Kategorien und Icons
@@ -302,15 +305,9 @@ history:
 | Befehl | Zweck |
 |---|---|
 | `validate` | Schema, Pflichtfelder, Referenzen (`location`, `series`, `parent`), Zeiten, Region/Stufe zulässig, Dubletten-Verdacht (gleiche Location+Serie, überlappender Zeitraum) |
-| `render [--calendar X] [--from <datum>]` | Soll-Zustand als kompaktes JSON (Titel, Zeiten, Beschreibung, Farbe, Hash) |
+| `render [--calendar X] [--from <datum>] [--all]` | Soll-Zustand als kompaktes JSON (Titel, Zeiten, Beschreibung, Farbe, Hash); `--all` schließt vergangene Termine ein |
 | `new-event` / `new-location` | Gerüst mit korrektem Dateinamen/ID |
-| `list` | Übersichten, z. B. alle `geschätzt`-Termine der nächsten 3 Monate |
-
-**Architektur-Tools (specctl, taskctl):** Sie stammen aus `com-gft-tsbo-source/ai-architecture-tools`
-und werden nicht ins Repo kopiert. Ein SessionStart-Hook klont das Repo auf einen **fest gepinnten Commit**
-(`f25ae40a696037be4b9b6507c14cb08abbb73256`), damit das Dateiformat stabil bleibt. Ein Update ist eine
-bewusste Änderung des Pins. Voraussetzung: Das Tool-Repo ist in der Session per Git erreichbar.
-Aufruf: `specctl --root docs …` (Spec in `docs/spec.md`), `taskctl --root docs …` (Tasks in `docs/tasks/`).
+| `list [--calendar X] [--status S] [--from <datum>] [--to <datum>] [--json]` | Übersichten, z. B. alle `geschätzt`-Termine der nächsten 3 Monate |
 
 ## Skills
 
