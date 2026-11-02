@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""ec – Hilfs-CLI für den Event Calendar (siehe docs/spec.md, „Tools“).
+"""ec – Hilfs-CLI für den Event Calendar (siehe doc/spec.md, „Tools“).
 
 Befehle:
   validate                         Daten und Konfiguration prüfen

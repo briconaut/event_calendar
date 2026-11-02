@@ -1,4 +1,4 @@
-# Zentrale Konfiguration des Event Calendar (siehe docs/spec.md, „Konfiguration“).
+# Zentrale Konfiguration des Event Calendar (siehe doc/spec.md, „Konfiguration“).
 
 timezone: Europe/Berlin
 

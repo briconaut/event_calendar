@@ -2,7 +2,7 @@
 
 Verwaltet drei private Google-Kalender (Weihnachtsmärkte, Feuerwerke, Events und Feste).
 **Das Repository ist führend**: Die Kalender werden ausschließlich aus `data/events/` befüllt
-bzw. bereinigt. Maßgebliche Spezifikation: `docs/spec.md`, Umsetzungsplan: `docs/tasks/`
+bzw. bereinigt. Maßgebliche Spezifikation: `doc/spec.md`, Umsetzungsplan: `doc/tasks/`
 (beide werden vorerst nicht mehr mit Werkzeugen verwaltet; Aufräumen folgt später).
 
 ## Arbeitsablauf
