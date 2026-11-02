@@ -2,8 +2,8 @@
 
 Verwaltet drei private Google-Kalender (Weihnachtsmärkte, Feuerwerke, Events und Feste).
 **Das Repository ist führend**: Die Kalender werden ausschließlich aus `data/events/` befüllt
-bzw. bereinigt. Maßgebliche Spezifikation: `docs/spec.md` (verwaltet mit `tools/specctl --root docs`),
-Umsetzungsplan: `docs/tasks/` (`tools/taskctl --root docs`).
+bzw. bereinigt. Maßgebliche Spezifikation: `docs/spec.md`, Umsetzungsplan: `docs/tasks/`
+(beide werden vorerst nicht mehr mit Werkzeugen verwaltet; Aufräumen folgt später).
 
 ## Arbeitsablauf
 
@@ -23,19 +23,6 @@ Aufgaben und ihre Skills:
 | Kalender an den Repo-Stand angleichen | `calendar-sync` |
 
 Fertige Aufträge für Sessions und Routinen liegen in `prompts/`.
-
-## Arbeit am Umsetzungsplan (`docs/tasks/`)
-
-Der Plan wird **sequenziell** abgearbeitet, mit dem Skill `taskctl-worker-cli` (CLI `tools/taskctl`,
-Root `docs`):
-
-1. Die nächste Task liefert ausschließlich `tools/taskctl --root docs --json next`.
-2. Ist sie offen: beginnen (`~`), bearbeiten, mit `annotate` protokollieren, Ergebnis setzen.
-3. Steht sie auf `R`, `C` oder `B`, ist der Plan **blockiert**: Stand berichten und auf den Nutzer warten.
-   Die Abnahme einer `R`-Task setzt der Nutzer.
-
-`--force`, `--set-status` und direkte Änderungen an `docs/tasks/` sind dem Nutzer vorbehalten.
-Der PreToolUse-Hook `.claude/hooks/task-guard.py` setzt diese Regeln durch.
 
 ## Was in welchen Kalender gehört
 
@@ -94,5 +81,4 @@ Jede Location (`config/locations/<ort>.yaml`, eine Stadt oder Gemeinde) hat eine
   ganztägig mit `time_unknown: true`.
 - Felder und erlaubte Werte: `schemas/*.schema.json`.
 - Tests: `python3 -m unittest discover -s tests`.
-- Python-Pakete und `tools/specctl`/`tools/taskctl` stellt der SessionStart-Hook bereit
-  (`.claude/hooks/session-start.sh`, gepinnter Commit der ai-architecture-tools).
+- Python-Pakete (`requirements.txt`) installiert der SessionStart-Hook (`.claude/hooks/session-start.sh`).
