@@ -5,7 +5,7 @@
 - ID: d1e48e
 - Type: 2
 - Number: 005
-- Status: ~
+- Status: R
 - Phase: 002-Suche-und-Sync
 - review: user
 - assignee-type: agent
@@ -24,3 +24,5 @@
 - 2026-11-03T09:43:05+00:00: M [R] -> [~] |
   > USER-APPROVED: Ja, setze d1e48e auf ~ und recherchiere die fehlenden Orte weiter
   > Rückführung R->~ auf User-Anweisung: Suche fortsetzen (fehlende Orte)
+- 2026-11-03T09:46:31+00:00: T [~] -> [~] | Fortsetzung per WebSearch/WebFetch: 14 weitere Weihnachtsmärkte 2026 + 14 Locations (Frankfurt, Wiesbaden, Darmstadt, Offenbach, Hanau, Aschaffenburg, Bad Homburg, Mannheim, Weinheim, Worms, Speyer, Bad Dürkheim, Koblenz, Rüdesheim). bestätigt (Stadt-/Veranstalterseite): Wiesbaden, Darmstadt, Offenbach, Aschaffenburg, Bad Homburg, Mannheim, Weinheim, Speyer, Koblenz. angekündigt (nur Portale): Frankfurt, Hanau, Worms, Bad Dürkheim, Rüdesheim. Lücken: kein belastbarer Termin für Eltville, Bingen (nur Büdesheim, eintägig), Hochheim, Oestrich-Winkel, Boppard, Mittelrhein-Orte, Alzey (nur eintägiger Christkindchesmarkt 05.12., ausgeschlossen), Bad Soden/Taunus/Wetterau/Rhein-Main-Umland, Mannheim Märchenwald (kein 2026-Termin), Ludwigshafen/Neustadt u.a. nicht geprüft. Heidelberg, Mainz bereits vorhanden. validate 0 Fehler, Tests OK. Kein calendar-sync.
+- 2026-11-03T09:46:42+00:00: M [~] -> [R] | calendar-sync pending: needs user approval
