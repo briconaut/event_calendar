@@ -24,3 +24,4 @@
 - 2026-11-03T10:49:19+00:00: M [~] -> [R] | Suche abgeschlossen, Review durch User; offen: Heidelberg Schlossbeleuchtung, Bonn, Wurstmarkt, Silvester ohne 2027-Termine
 - 2026-11-03T10:49:29+00:00: T [R] -> [R] | calendar-sync pending: needs user approval
 - 2026-11-03T11:05:00+00:00: T [R] -> [R] | calendar-sync erledigt (User-Freigabe): 8 Feuerwerke angelegt (inkl. Mainfest 02.08.2027), 44 Termine unveraendert, 0 geloescht, 0 Fehler; Pruefabfrage ohne Abweichung. Marker 'calendar-sync pending' erledigt.
+- 2026-11-03T11:02:00+00:00: T [R] -> [R] | calendar-sync done (User-Freigabe): 8 Feuerwerke angelegt (inkl. Mainfest 02.08.2027), 44 Termine unveraendert, 0 geloescht, 0 Fehler; Pruefabfrage ohne Abweichung.
