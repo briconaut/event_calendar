@@ -5,6 +5,12 @@ timezone: Europe/Berlin
 search:
   horizon_months: 12          # Suchhorizont ab heute
   christmas_next_season: true # Weihnachtsmärkte immer für die kommende Saison
+  # Pflichtquellen: werden bei jeder Suche/Prüfung der genannten Kalender gelesen –
+  # zusätzlich zur freien Websuche, nie statt ihr (siehe Skill event-search).
+  required_sources:
+  - url: https://www.feuerwerk-fanpage.de/feuerwerkstermine
+    calendars: [feuerwerke]
+    note: bundesweite Liste; Bot-Prüfung blockiert ggf. den Abruf → Websuche mit site:feuerwerk-fanpage.de
 
 calendars:
   weihnachtsmaerkte:

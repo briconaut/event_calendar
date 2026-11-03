@@ -6,6 +6,7 @@ Befehle:
   render [--calendar] [--from]     Soll-Zustand für den Kalender-Sync als JSON
   new-event / new-location         Gerüst-Dateien anlegen
   list                             Übersichten nach Kalender/Status/Zeitraum
+  checklist --calendar X           Pflicht-Serien und Pflichtquellen eines Suchlaufs
 """
 from __future__ import annotations
 
@@ -50,10 +51,11 @@ def load_schema(repo: Path, name: str) -> dict:
 
 @dataclass
 class Repo:
-    """Geladener Gesamtstand: Settings, Locations, Events (+ Ladefehler)."""
+    """Geladener Gesamtstand: Settings, Locations, ortsunabhängige Serien, Events (+ Ladefehler)."""
     root: Path
     settings: dict = field(default_factory=dict)
     locations: dict[str, dict] = field(default_factory=dict)
+    series: list[dict] = field(default_factory=list)   # config/series.yaml (Wanderevents)
     events: dict[str, dict] = field(default_factory=dict)
     errors: list[str] = field(default_factory=list)
 
@@ -63,6 +65,9 @@ class Repo:
         r._load_file(root / "config" / "settings.yaml", "settings", lambda d: setattr(r, "settings", d))
         for p in sorted((root / "config" / "locations").glob("*.yaml")):
             r._load_file(p, "location", lambda d, p=p: r.locations.__setitem__(p.stem, d))
+        series_file = root / "config" / "series.yaml"
+        if series_file.exists():  # optional
+            r._load_file(series_file, "series", lambda d: setattr(r, "series", d["series"]))
         for p in sorted((root / "data" / "events").glob("*/*.yaml")):
             r._load_file(p, "event", lambda d, p=p: r.events.__setitem__(event_id(p), d))
         return r
@@ -125,10 +130,14 @@ def region_level(repo: Repo, location: dict, calendar: str) -> str:
     return region["levels"][calendar] if region else "none"
 
 
-def find_series(location: dict, series_id: str | None) -> dict | None:
+def find_series(repo: Repo, location: dict, series_id: str | None) -> dict | None:
+    """Serie zuerst in der Location des Termins, sonst unter den ortsunabhängigen Serien."""
     if not series_id:
         return None
-    return next((s for s in location.get("series", []) if s["id"] == series_id), None)
+    for ser in (*location.get("series", []), *repo.series):
+        if ser["id"] == series_id:
+            return ser
+    return None
 
 
 def validate(repo: Repo) -> tuple[list[str], list[str]]:
@@ -143,21 +152,29 @@ def validate(repo: Repo) -> tuple[list[str], list[str]]:
             errors.append(f"location {lid}: unbekannte Region '{loc['region']}'")
         if loc.get("include") and loc.get("exclude"):
             errors.append(f"location {lid}: include und exclude gleichzeitig gesetzt")
-        seen = set()
-        for ser in loc.get("series", []):
-            if ser["id"] in seen:
-                errors.append(f"location {lid}: Serie '{ser['id']}' doppelt")
-            seen.add(ser["id"])
-            if ser["calendar"] == "events" and ser.get("category") not in s["categories"]:
-                errors.append(f"location {lid}: Serie '{ser['id']}': unbekannte Kategorie '{ser.get('category')}'")
-            if (ser.get("directions") or ser.get("viewpoints")) and not ser.get("sources"):
-                errors.append(f"location {lid}: Serie '{ser['id']}': directions/viewpoints ohne sources")
+
+    # Serien-IDs sind repo-weit eindeutig (Locations + config/series.yaml)
+    owners: dict[str, str] = {}
+    for owner, ser in all_series(repo):
+        if ser["id"] in owners:
+            errors.append(f"{owner}: Serie '{ser['id']}' doppelt (schon in {owners[ser['id']]})")
+        owners.setdefault(ser["id"], owner)
+        if ser["calendar"] == "events" and ser.get("category") not in s["categories"]:
+            errors.append(f"{owner}: Serie '{ser['id']}': unbekannte Kategorie '{ser.get('category')}'")
+        if (ser.get("directions") or ser.get("viewpoints")) and not ser.get("sources"):
+            errors.append(f"{owner}: Serie '{ser['id']}': directions/viewpoints ohne sources")
 
     for eid, ev in repo.events.items():
         errors += [f"event {eid}: {m}" for m in _check_event(repo, eid, ev)]
 
     warnings += _duplicate_suspects(repo)
     return errors, warnings
+
+
+def all_series(repo: Repo) -> list[tuple[str, dict]]:
+    """Alle Serien mit Herkunft: ('location <id>', serie) bzw. ('series.yaml', serie)."""
+    out = [(f"location {lid}", ser) for lid, loc in repo.locations.items() for ser in loc.get("series", [])]
+    return out + [("series.yaml", ser) for ser in repo.series]
 
 
 def _check_event(repo: Repo, eid: str, ev: dict) -> list[str]:
@@ -191,9 +208,10 @@ def _check_event(repo: Repo, eid: str, ev: dict) -> list[str]:
     if loc is None:
         out.append(f"unbekannte Location '{ev['location']}'")
     else:
-        ser = find_series(loc, ev.get("series"))
+        ser = find_series(repo, loc, ev.get("series"))
         if ev.get("series") and ser is None:
-            out.append(f"unbekannte Serie '{ev['series']}' in Location '{ev['location']}'")
+            out.append(f"unbekannte Serie '{ev['series']}' (weder in Location '{ev['location']}' "
+                       f"noch in config/series.yaml)")
         if ser and ser["calendar"] != cal:
             out.append(f"Serie '{ser['id']}' gehört zum Kalender {ser['calendar']}")
         level = region_level(repo, loc, cal)
@@ -307,7 +325,7 @@ STATUS_TEXT = {
 def render_description(repo: Repo, eid: str, ev: dict) -> str:
     """Beschreibung nach fester Vorlage (ohne Sync-Fußzeile)."""
     s, loc = repo.settings, repo.locations[ev["location"]]
-    ser = find_series(loc, ev.get("series")) or {}
+    ser = find_series(repo, loc, ev.get("series")) or {}
     blocks: list[str] = []
     if ev.get("description"):
         blocks.append(ev["description"].strip())
@@ -456,6 +474,63 @@ def list_events(repo: Repo, calendar: str | None = None, status: str | None = No
     return out
 
 
+# --------------------------------------------------------------------------- Checkliste
+
+def add_months(day: dt.date, months: int) -> dt.date:
+    y, m = divmod(day.month - 1 + months, 12)
+    year, month = day.year + y, m + 1
+    for d in (day.day, 30, 29, 28):  # Monatsende abfangen
+        try:
+            return dt.date(year, month, d)
+        except ValueError:
+            continue
+    raise ValueError(day)
+
+
+def _overlaps(ev: dict, since: dt.date, until: dt.date) -> bool:
+    start, end = event_span(ev)
+    return start.date() <= until and end > dt.datetime.combine(since, dt.time())
+
+
+def checklist(repo: Repo, calendar: str, since: dt.date, until: dt.date) -> dict:
+    """Pflichtprogramm eines Suchlaufs (siehe Skill event-search).
+
+    Pflicht-Serien: alle Serien des Kalenders; bei `feuerwerke` zusätzlich alle Serien mit
+    `has_fireworks: true` (gesucht wird dann die Show). Je Serie die vorhandenen Termine im
+    Zeitraum und eine Aktion: `vorhanden` (ein Termin ist bestätigt), `recherchieren` oder
+    `ausgeschlossen` (Location in dieser Region/Stufe nicht zulässig).
+    """
+    rows = []
+    for owner, ser in all_series(repo):
+        own_cal = ser["calendar"] == calendar
+        show_of = calendar == "feuerwerke" and ser["calendar"] != "feuerwerke" and bool(ser.get("has_fireworks"))
+        if not (own_cal or show_of):
+            continue
+        lid = owner.removeprefix("location ") if owner.startswith("location ") else None
+        row = {"series": ser["id"], "name": ser["name"], "calendar": ser["calendar"],
+               "location": lid, "scope": ser.get("scope"), "search_for": "show" if show_of else "termin"}
+        if lid:
+            level = region_level(repo, repo.locations[lid], calendar)
+            if level == "none" or (level == "major" and not ser.get("major")):
+                rows.append(row | {"events": [], "action": "ausgeschlossen", "reason": f"Stufe {level}"})
+                continue
+        if show_of:  # Shows tragen keine series; Zuordnung über parent → Event der Serie
+            parents = {eid for eid, ev in repo.events.items() if ev.get("series") == ser["id"]}
+            hits = [(eid, ev) for eid, ev in repo.events.items()
+                    if ev["calendar"] == "feuerwerke" and ev.get("parent") in parents]
+        else:
+            hits = [(eid, ev) for eid, ev in repo.events.items()
+                    if ev.get("series") == ser["id"] and ev["calendar"] == calendar]
+        hits = sorted((eid, ev) for eid, ev in hits if _overlaps(ev, since, until))
+        found = [{"id": eid, "status": ev["status"]} for eid, ev in hits]
+        done = any(ev["status"] == "bestätigt" for _, ev in hits)
+        rows.append(row | {"events": found, "action": "vorhanden" if done else "recherchieren"})
+    sources = [src for src in repo.settings["search"].get("required_sources", [])
+               if calendar in src["calendars"]]
+    return {"calendar": calendar, "from": since.isoformat(), "to": until.isoformat(),
+            "required_sources": sources, "series": rows}
+
+
 # --------------------------------------------------------------------------- CLI
 
 def _date(value: str) -> dt.date:
@@ -495,6 +570,11 @@ def build_parser() -> argparse.ArgumentParser:
     li.add_argument("--from", dest="since", type=_date)
     li.add_argument("--to", dest="until", type=_date)
     li.add_argument("--json", action="store_true")
+
+    c = sub.add_parser("checklist", help="Pflicht-Serien und Pflichtquellen eines Suchlaufs als JSON")
+    c.add_argument("--calendar", required=True, choices=CALENDARS)
+    c.add_argument("--from", dest="since", type=_date, default=dt.date.today(), help="Default: heute")
+    c.add_argument("--to", dest="until", type=_date, help="Default: heute + search.horizon_months")
     return p
 
 
@@ -527,7 +607,8 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "validate":
         for e in errors:
             print(f"FEHLER: {e}", file=sys.stderr)
-        print(f"{len(repo.locations)} Locations, {len(repo.events)} Events: "
+        print(f"{len(repo.locations)} Locations, {len(repo.series)} ortsunabhängige Serien, "
+              f"{len(repo.events)} Events: "
               f"{len(errors)} Fehler, {len(warnings)} Warnungen")
         return 1 if errors else 0
 
@@ -540,6 +621,12 @@ def main(argv: list[str] | None = None) -> int:
     if args.cmd == "render":
         data = render(repo, args.calendar, None if args.all else args.since)
         json.dump(data, sys.stdout, ensure_ascii=False, indent=1)
+        print()
+        return 0
+
+    if args.cmd == "checklist":
+        until = args.until or add_months(args.since, repo.settings["search"]["horizon_months"])
+        json.dump(checklist(repo, args.calendar, args.since, until), sys.stdout, ensure_ascii=False, indent=1)
         print()
         return 0
 

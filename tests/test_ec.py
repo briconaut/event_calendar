@@ -321,6 +321,102 @@ class TestScaffoldAndList(RepoCase):
         self.assertEqual(ec.list_events(repo, until=dt.date(2027, 9, 2)), [])
 
 
+SERIES = """
+series:
+  - id: hessentag
+    name: Hessentag
+    calendar: events
+    category: grossevent
+    major: true
+    scope: Hessen
+"""
+
+HESSENTAG = """
+calendar: events
+category: grossevent
+title: Hessentag
+status: angekündigt
+start: 2027-06-11
+end: 2027-06-20
+all_day: true
+location: bingen
+series: hessentag
+sources: [https://example.org/hessentag]
+checked_at: 2027-01-01
+"""
+
+
+class TestGlobalSeries(RepoCase):
+    def test_event_resolves_global_series(self):
+        self.write("config/series.yaml", SERIES)
+        self.event("2027/2027-06-11-hessentag", HESSENTAG)
+        self.assertEqual(self.errors(), [])
+
+    def test_global_series_file_is_optional(self):
+        self.event("2027/2027-06-11-hessentag", HESSENTAG)
+        self.assertTrue(any("unbekannte Serie 'hessentag'" in e for e in self.errors()))
+
+    def test_global_series_needs_scope(self):
+        self.write("config/series.yaml", SERIES.replace("    scope: Hessen\n", ""))
+        self.assertTrue(any("scope" in e for e in self.errors()))
+
+    def test_series_ids_unique_repo_wide(self):
+        self.write("config/series.yaml", SERIES.replace("hessentag", "winzerfest"))
+        self.assertTrue(any("Serie 'winzerfest' doppelt" in e for e in self.errors()))
+
+    def test_region_rule_applies_to_host_location(self):
+        # Rheinland erlaubt in events nur major – Serie major: false → Fehler
+        self.write("config/series.yaml", SERIES.replace("major: true", "major: false"))
+        self.event("2027/2027-06-11-hessentag", HESSENTAG, location="koeln")
+        self.assertTrue(any("nur Großevents" in e for e in self.errors()))
+
+
+class TestChecklist(RepoCase):
+    def rows(self, calendar, since="2027-01-01", until="2027-12-31"):
+        data = ec.checklist(self.load(), calendar, dt.date.fromisoformat(since), dt.date.fromisoformat(until))
+        return data, {r["series"]: r for r in data["series"]}
+
+    def test_required_sources_filtered_by_calendar(self):
+        data, _ = self.rows("feuerwerke")  # setUp kopiert die echte settings.yaml
+        self.assertIn("https://www.feuerwerk-fanpage.de/feuerwerkstermine",
+                      [s["url"] for s in data["required_sources"]])
+        data, _ = self.rows("weihnachtsmaerkte")
+        self.assertEqual(data["required_sources"], [])
+
+    def test_actions(self):
+        self.write("config/series.yaml", SERIES)
+        self.event("2027/2027-09-03-binger-winzerfest", FEST)  # bestätigt
+        _, rows = self.rows("events")
+        self.assertEqual(rows["winzerfest"]["action"], "vorhanden")
+        self.assertEqual(rows["hessentag"]["action"], "recherchieren")   # kein Termin
+        self.assertIsNone(rows["hessentag"]["location"])
+        self.assertEqual(rows["ringfest"]["action"], "ausgeschlossen")   # Rheinland, nicht major
+        self.assertEqual(rows["karneval"]["action"], "recherchieren")    # Rheinland, major
+
+    def test_unconfirmed_or_out_of_period_needs_research(self):
+        self.event("2027/2027-09-03-binger-winzerfest", FEST, status="geschätzt")
+        self.assertEqual(self.rows("events")[1]["winzerfest"]["action"], "recherchieren")
+        self.event("2027/2027-09-03-binger-winzerfest", FEST)
+        _, rows = self.rows("events", until="2027-08-31")
+        self.assertEqual((rows["winzerfest"]["action"], rows["winzerfest"]["events"]), ("recherchieren", []))
+
+    def test_fireworks_include_shows_of_event_series(self):
+        self.write("config/locations/bingen.yaml", BINGEN.replace(
+            "    category: weinfest\n", "    category: weinfest\n    has_fireworks: true\n"))
+        self.event("2027/2027-09-03-binger-winzerfest", FEST)
+        self.event("2027/2027-09-12-abschlussfeuerwerk-winzerfest", SHOW, status="bestätigt")
+        _, rows = self.rows("feuerwerke")
+        self.assertEqual(rows["winzerfest"]["search_for"], "show")
+        self.assertEqual(rows["winzerfest"]["action"], "vorhanden")
+        self.assertEqual(rows["winzerfest"]["events"][0]["id"], "2027/2027-09-12-abschlussfeuerwerk-winzerfest")
+        self.assertIn("rhein-in-flammen", rows)          # Feuerwerks-Serie selbst
+        self.assertNotIn("ringfest", rows)               # events-Serie ohne Feuerwerk
+
+    def test_add_months_clamps_month_end(self):
+        self.assertEqual(ec.add_months(dt.date(2026, 1, 31), 1), dt.date(2026, 2, 28))
+        self.assertEqual(ec.add_months(dt.date(2026, 11, 3), 12), dt.date(2027, 11, 3))
+
+
 class TestCli(RepoCase):
     def run_cli(self, *args):
         out, err = io.StringIO(), io.StringIO()
@@ -346,6 +442,19 @@ class TestCli(RepoCase):
         rc, out, _ = self.run_cli("render", "--from", "2027-01-01")
         self.assertEqual(rc, 0)
         self.assertEqual(json.loads(out)[0]["id"], "2027/2027-09-03-binger-winzerfest")
+
+    def test_checklist_json(self):
+        import json
+        rc, out, _ = self.run_cli("checklist", "--calendar", "events", "--from", "2027-01-01")
+        self.assertEqual(rc, 0)
+        data = json.loads(out)
+        self.assertEqual((data["from"], data["to"]), ("2027-01-01", "2028-01-01"))
+
+    def test_repo_series_file_is_valid(self):
+        """Die echte config/series.yaml des Repos muss schema-gültig sein."""
+        repo = ec.Repo.load(REPO)
+        self.assertEqual([e for e in repo.errors if e.startswith("config/series")], [])
+        self.assertTrue(repo.series)
 
     def test_repo_settings_are_valid(self):
         """Die echte config/settings.yaml des Repos muss schema-gültig sein."""

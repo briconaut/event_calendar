@@ -43,6 +43,16 @@ Umzüge, Weinfeste, Mittelalter-/Historienfeste, Lichtfeste, Stadt- und Hafenfes
 Weihnachten. Kerben und Dorffeste bleiben draußen. Ein mehrtägiges Lichtfest steht hier; seine zeitlich
 festgelegte Show zusätzlich im Kalender Feuerwerke.
 
+## Pflicht-Serien und Pflichtquellen
+
+- **Jede Serie ist Pflicht** bei der Suche ihres Kalenders (bei `feuerwerke` auch Serien mit
+  `has_fireworks: true`). Ein Event, das garantiert gesucht werden soll, bekommt eine Serie.
+- **Wanderevents** (Hessentag, Gartenschauen) stehen als ortsunabhängige Serie in `config/series.yaml`;
+  der Termin hängt an der Location des jeweiligen Austragungsorts. Serien-IDs sind repo-weit eindeutig.
+- **Pflichtquellen** (`search.required_sources` in `config/settings.yaml`) werden bei jeder Suche/Prüfung
+  ihrer Kalender gelesen – zusätzlich zur freien Websuche, nie statt ihr.
+- `ec.py checklist --calendar X` liefert beides für einen Suchlauf.
+
 ## Region
 
 Jede Location (`config/locations/<ort>.yaml`, eine Stadt oder Gemeinde) hat eine `region`.

@@ -1,4 +1,14 @@
 name: Hochheim am Main
 state: Hessen
 region: rhein-main
-series: []
+series:
+- id: hochheimer-markt
+  name: Hochheimer Markt
+  calendar: events
+  category: jahrmarkt
+  homepage: https://www.hochheim-tourismus.de
+  sources:
+  - https://www.hochheim-tourismus.de
+  - https://www.festivalsindeutschland.de/festival/hochheimer-markt
+  typical_period: Anfang November, Fr bis Dienstag nach Allerseelen
+  has_fireworks: true

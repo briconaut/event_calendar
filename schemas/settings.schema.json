@@ -5,6 +5,7 @@
   "required": ["timezone", "search", "calendars", "show_types", "categories", "regions", "display"],
   "additionalProperties": false,
   "$defs": {
+    "url": {"type": "string", "pattern": "^https?://"},
     "level": {"enum": ["all", "major", "none"]},
     "named_icon": {
       "type": "object",
@@ -31,7 +32,23 @@
       "additionalProperties": false,
       "properties": {
         "horizon_months": {"type": "integer", "minimum": 1},
-        "christmas_next_season": {"type": "boolean"}
+        "christmas_next_season": {"type": "boolean"},
+        "required_sources": {
+          "description": "Pflichtquellen: jede Suche/Prüfung des Kalenders liest sie zusätzlich zur freien Websuche",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["url", "calendars"],
+            "additionalProperties": false,
+            "properties": {
+              "url": {"$ref": "#/$defs/url"},
+              "calendars": {"type": "array", "minItems": 1, "uniqueItems": true,
+                            "items": {"enum": ["weihnachtsmaerkte", "feuerwerke", "events"]}},
+              "note": {"type": "string"},
+              "fallback_url": {"$ref": "#/$defs/url"}
+            }
+          }
+        }
       }
     },
     "calendars": {

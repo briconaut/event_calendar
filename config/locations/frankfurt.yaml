@@ -34,7 +34,7 @@ series:
   - https://www.visitfrankfurt.travel/fileadmin/Mediendatenbank/Dokumente/PM/PM_MUF_2026.pdf
   - https://www.visitfrankfurt.travel/en/experience/festival-and-events/museum-embankment-festival
   typical_period: letztes Augustwochenende, Fr-So
-  has_fireworks: false
+  has_fireworks: true
 - id: mainfest
   name: Frankfurter Mainfest
   calendar: events
@@ -45,4 +45,4 @@ series:
   - https://www.festivalsindeutschland.de/festival/frankfurter-mainfest
   - https://www.festivalsindeutschland.de/festival/frankfurter-mainfest/2025
   typical_period: erstes Augustwochenende, Fr-Mo
-  has_fireworks: false
+  has_fireworks: true
