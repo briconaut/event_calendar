@@ -1,0 +1,17 @@
+name: Hamburg
+state: Hamburg
+region: sonstige
+include: true
+notes: 'Auf Wunsch des Users trotz Region sonstige aufgenommen (include: true).'
+series:
+- id: hamburg-cruise-days
+  name: Hamburg Cruise Days
+  calendar: events
+  category: stadtfest
+  major: true
+  homepage: https://www.hamburgcruisedays.de
+  sources:
+  - https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/hamburg-cruise-days/
+  typical_period: September, Fr-So, alle zwei Jahre; Blue Port Illumination, Schiffsparade
+    mit Feuerwerk am Samstagabend
+  has_fireworks: true

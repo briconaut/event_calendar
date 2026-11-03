@@ -1,0 +1,18 @@
+name: Konstanz
+state: Baden-Württemberg
+region: sonstige
+include: true
+notes: 'Auf Wunsch des Users trotz Region sonstige aufgenommen (include: true).'
+series:
+- id: konstanzer-seenachtfest
+  name: Konstanzer Seenachtfest
+  calendar: events
+  category: grossevent
+  major: true
+  homepage: https://www.seenachtfest-konstanz.com
+  sources:
+  - https://www.festivalsindeutschland.de/festival/konstanzer-seenachtfest
+  - https://www.bodensee.de/urlaubsinspiration/sommer/seenachtfest-konstanz
+  typical_period: zweiter Samstag im August, ab 15 Uhr; musiksynchrones Seefeuerwerk
+    am Abend
+  has_fireworks: true

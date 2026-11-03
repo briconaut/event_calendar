@@ -1,0 +1,20 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Hamburg Cruise Days - Parade mit Feuerwerk
+status: angekündigt
+start: '2027-09-18'
+end: '2027-09-18'
+all_day: true
+time_unknown: true
+location: hamburg
+venue: Elbe, Hamburger Hafen
+parent: 2027/2027-09-17-hamburg-cruise-days-2027
+sources:
+- https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/hamburg-cruise-days/
+- https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungskalender/blue-port-feuerwerks-und-lichterfahrt-cruise-days/
+checked_at: '2026-11-03'
+status_note: 'Hamburg Tourismus: Parade bei Einbruch der Dunkelheit am Sa 18.09.2027,
+  begleitet von Feuerwerk (Angabe aus der Ausschreibung einer Feuerwerksfahrt der
+  Cap San Diego); Uhrzeit nicht veröffentlicht. Blue Port-Illumination läuft über
+  die Festtage und ist im Event beschrieben.'

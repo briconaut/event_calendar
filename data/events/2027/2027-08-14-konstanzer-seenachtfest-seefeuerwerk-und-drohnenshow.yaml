@@ -1,0 +1,20 @@
+calendar: feuerwerke
+show_types:
+- pyro
+- drone
+title: Konstanzer Seenachtfest - Seefeuerwerk und Drohnenshow
+status: geschätzt
+start: '2027-08-14'
+end: '2027-08-14'
+all_day: true
+time_unknown: true
+location: konstanz
+venue: Konstanzer Bucht, Hafenareal
+parent: 2027/2027-08-14-konstanzer-seenachtfest-2027
+sources:
+- https://www.festivalsindeutschland.de/festival/konstanzer-seenachtfest
+- https://www.bodensee.de/urlaubsinspiration/sommer/seenachtfest-konstanz
+checked_at: '2026-11-03'
+status_note: 'Geschätzt: musiksynchrones Feuerwerk (ca. 30 min) am Abend des Seenachtfests,
+  2026 erstmals mit Drohnenshow (DroneDreams); Fortführung der Drohnenshow 2027 offen.
+  Uhrzeit nicht veröffentlicht.'

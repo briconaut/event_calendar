@@ -1,0 +1,18 @@
+calendar: events
+category: grossevent
+title: Münchner Sommernachtstraum 2027
+status: geschätzt
+start: '2027-07-17'
+end: '2027-07-17'
+all_day: true
+location: muenchen
+series: muenchner-sommernachtstraum
+venue: Olympiapark München
+homepage: https://sommernachtstraum-muenchen.de
+sources:
+- https://www.muenchen.de/veranstaltungen/freizeit/muenchner-sommernachtstraum-2027-tickets
+- https://www.festivalsindeutschland.de/festival/muenchner-sommernachtstraum/2025
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: dritter Samstag im Juli (2025: Sa 19.07., 2026:
+  Sa 18.07.) -> Sa 17.07.2027. muenchen.de: offizieller Termin 2027 noch nicht angekündigt.
+  Ticketpflichtig.'

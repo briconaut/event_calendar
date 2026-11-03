@@ -1,0 +1,17 @@
+calendar: events
+category: grossevent
+title: Konstanzer Seenachtfest 2027
+status: geschätzt
+start: '2027-08-14'
+end: '2027-08-14'
+all_day: true
+location: konstanz
+series: konstanzer-seenachtfest
+venue: Hafenareal Konstanz (grenzüberschreitend mit Kreuzlingen)
+homepage: https://www.seenachtfest-konstanz.com
+sources:
+- https://www.festivalsindeutschland.de/festival/konstanzer-seenachtfest
+- https://www.bodensee.de/urlaubsinspiration/sommer/seenachtfest-konstanz
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: zweiter Samstag im August (2026: Sa 08.08., ab
+  15 Uhr) -> Sa 14.08.2027. Kein Termin 2027 veröffentlicht. Eintritt mit Ticket.'
