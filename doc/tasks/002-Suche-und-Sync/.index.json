@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T11:13:50.675519+00:00",
+  "updated": "2026-11-03T11:15:22.322860+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -89,7 +89,7 @@
       "nr": 8,
       "type": "2",
       "name": "Erster Sync",
-      "status": " ",
+      "status": "R",
       "file": "008-2-33787e-erster-sync.md",
       "meta": {
         "review": "user",
