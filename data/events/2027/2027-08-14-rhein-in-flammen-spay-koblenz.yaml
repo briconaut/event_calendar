@@ -1,0 +1,16 @@
+calendar: feuerwerke
+show_types:
+- pyro
+- drone
+title: Rhein in Flammen Spay-Koblenz
+status: geschätzt
+start: 2027-08-14T22:30
+end: null
+all_day: false
+location: koblenz
+venue: Deutsches Eck / Festung Ehrenbreitstein
+sources:
+- https://www.rhein-in-flammen.com/services/files/PM_RheininFlammen2025.docx
+- https://www.festivalsindeutschland.de/festival/rhein-in-flammen-koblenz-koblenzer-sommerfest
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: 2025 Sa 09.08., 2026 Sa 08.08. (jeweils zweiter Samstag im August) -> Sa 14.08.2027; ebenso möglich Sa 07.08. (Muster nicht eindeutig). Uhrzeit 22:30 nach Ausgabe 2026 (ohne Gewähr); Drohnenshow 2026 ergänzend. Kein Termin 2027 veröffentlicht.'

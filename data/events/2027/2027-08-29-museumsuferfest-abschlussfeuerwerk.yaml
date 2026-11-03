@@ -1,0 +1,15 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Museumsuferfest - Abschlussfeuerwerk
+status: geschätzt
+start: 2027-08-29T22:00
+end: null
+all_day: false
+location: frankfurt
+venue: Mainufer zwischen Holbeinsteg und Untermainbrücke
+sources:
+- https://www.visitfrankfurt.travel/fileadmin/Mediendatenbank/Dokumente/PM/PM_MUF_2026.pdf
+- https://www.hessenschau.de/kultur/museumsuferfest-frankfurt-2026-was-ist-wichtig-was-wird-geboten-v10,2026-museumsuferfest-faq-100.html
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: Museumsuferfest am letzten August-Wochenende (2026: 28.-30.08., Feuerwerk Sonntagabend ca. 22 Uhr, laut Suchtreffern zur Ausgabe 2026) -> So 29.08.2027. Kein Termin 2027 veröffentlicht.'

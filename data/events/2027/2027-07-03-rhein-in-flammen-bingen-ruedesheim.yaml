@@ -1,0 +1,16 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Rhein in Flammen Bingen-Rüdesheim
+status: geschätzt
+start: '2027-07-03'
+end: '2027-07-03'
+all_day: true
+time_unknown: true
+location: ruedesheim
+venue: Rhein zwischen Trechtingshausen, Bingen und Rüdesheim
+sources:
+- https://www.rhein-in-flammen.com/services/files/PM_RheininFlammen2025.docx
+- https://www.festivalsindeutschland.de/festival/rhein-in-flammen-bingen-ruedesheim
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: Veranstalter nennt "ersten Julisamstag" (2025: 05.07., 2026: 04.07.) -> Sa 03.07.2027. Abschlussfeuerwerk kurz vor Mitternacht (Pressemitteilung 2025). Kein Termin 2027 veröffentlicht.'

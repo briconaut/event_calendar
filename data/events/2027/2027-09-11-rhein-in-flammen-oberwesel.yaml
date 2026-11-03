@@ -1,0 +1,15 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Rhein in Flammen Oberwesel
+status: geschätzt
+start: '2027-09-11'
+end: '2027-09-11'
+all_day: true
+time_unknown: true
+location: oberwesel
+sources:
+- https://www.rhein-in-flammen.com/services/files/PM_RheininFlammen2025.docx
+- https://www.festivalsindeutschland.de/festival/rhein-in-flammen-nacht-der-tausend-feuer-oberwesel
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: Veranstalter nennt "zweiten Samstag im September" (2025: 13.09., 2026: 12.09.) -> Sa 11.09.2027. Abschluss mit Pyromusical (Pressemitteilung 2025). Kein Termin 2027 veröffentlicht.'
