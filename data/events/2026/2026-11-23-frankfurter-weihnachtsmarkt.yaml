@@ -1,0 +1,15 @@
+calendar: weihnachtsmaerkte
+title: Frankfurter Weihnachtsmarkt
+status: angekündigt
+start: '2026-11-23'
+end: '2026-12-22'
+all_day: true
+location: frankfurt
+sources:
+- https://www.festivalsindeutschland.de/festival/frankfurter-weihnachtsmarkt
+- https://www.meininger-hotels.com/blog/weihnachtsmarkt-frankfurt/
+checked_at: '2026-11-03'
+homepage: https://www.visitfrankfurt.travel
+opening_hours: Mo-Sa 10-21 Uhr, So 11-21 Uhr (laut Sekundärquellen)
+status_note: Portale nennen 23.11.-22.12.2026; visitfrankfurt.travel nicht abrufbar,
+  keine amtliche Bestätigung gefunden.

@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Aschaffenburger Weihnachtsmarkt
+status: bestätigt
+start: '2026-11-21'
+end: '2026-12-20'
+all_day: true
+location: aschaffenburg
+sources:
+- https://mein.aschaffenburg.de/event/weihnachtsmarkt/
+checked_at: '2026-11-03'
+homepage: https://mein.aschaffenburg.de/event/weihnachtsmarkt/
+opening_hours: Mo-Sa 10-21 Uhr, So 11-21 Uhr; Totensonntag (22.11.) geschlossen
+status_note: 'Widerspruch: Stadtseite nennt 21.11.-21.12.; Portale nennen 19.11.-20.12. Eingetragen ist die Schnittmenge 21.11.-20.12.'

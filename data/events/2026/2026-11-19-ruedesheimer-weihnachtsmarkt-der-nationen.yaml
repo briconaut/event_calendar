@@ -1,0 +1,16 @@
+calendar: weihnachtsmaerkte
+title: Rüdesheimer Weihnachtsmarkt der Nationen
+status: bestätigt
+start: '2026-11-19'
+end: '2026-12-23'
+all_day: true
+location: ruedesheim
+sources:
+- https://www.ruedesheim.de
+- https://www.tradefairdates.com/R%C3%BCdesheim+Christmas+Market+of+Nations-M8125/R%C3%BCdesheim+am+Rhein.html
+- https://www.weihnachtsmarkt-der-nationen.de
+- https://tourismus.wiesbaden.de/downloads/dokumente/Eventkalender-2026.pdf
+checked_at: '2026-11-03'
+homepage: https://www.weihnachtsmarkt-der-nationen.de
+status_note: Stadtseite ruedesheim.de und Eventkalender 2026 Wiesbaden Rheingau (tourismus.wiesbaden.de)
+  nennen 19.11.-23.12.2026.

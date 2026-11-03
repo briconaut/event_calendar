@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Weihnachtsmarkt der Kunigunde
+status: bestätigt
+start: '2026-11-23'
+end: '2026-12-22'
+all_day: true
+location: neustadt-weinstrasse
+sources:
+- https://www.neustadt.eu/Stadtleben-Kultur-Tourismus/Veranstaltungskalender/Weihnachtszeit/
+- https://www.festivalsindeutschland.de/festival/weihnachtsmarkt-der-kunigunde
+checked_at: '2026-11-03'
+status_note: 'Stadt Neustadt: ''Vom 23.11. bis 22.12.2026 begeistert der Weihnachtsmarkt
+  der Kunigunde'' (Marktplatz; Höfe an Adventswochenenden).'

@@ -24,6 +24,8 @@ Aufgaben und ihre Skills:
 
 Fertige Aufträge für Sessions und Routinen liegen in `prompts/`.
 
+Tasks aus `doc/tasks` arbeitet der Projekt-Agent `event-worker` ab (`.claude/agents/event-worker.md`; hat WebSearch und Google-Kalender-Zugriff), nicht der Plugin-Agent `taskctl-worker`. Review-Gates und Remote-Aktionen bleiben beim User.
+
 ## Was in welchen Kalender gehört
 
 **Weihnachtsmärkte** (`weihnachtsmaerkte`): mehrtägige Märkte von Stadt, Gemeinde oder Veranstalter,
@@ -63,6 +65,12 @@ Jede Location (`config/locations/<ort>.yaml`, eine Stadt oder Gemeinde) hat eine
 - `angekündigt`: Datum aus Sekundärquelle (Portal, Presse) oder vom Veranstalter als vorläufig genannt.
 - `geschätzt`: aus Vorjahresmuster bzw. `typical_period` abgeleitet; Begründung in `status_note`.
 - `abgesagt`: bleibt im Repo, `calendar-sync` löscht ihn aus dem Kalender.
+
+**Widersprüchliche Zeiträume**: Nennen Quellen unterschiedliche Zeiträume, wird nur die Schnittmenge
+als `start`/`end` eingetragen. Der Widerspruch steht im Termin selbst (`status_note`) mit allen
+Varianten und ihren Quellen sowie dem eingetragenen Zeitraum. Widersprüche, die sich nicht als
+zusammenhängende Schnittmenge ausdrücken lassen (z. B. getrennte Wochenenden), werden nicht
+stillschweigend aufgelöst, sondern dem User gemeldet.
 
 ## Herkunft der Inhalte
 

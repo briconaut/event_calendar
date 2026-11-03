@@ -1,0 +1,14 @@
+calendar: weihnachtsmaerkte
+title: Advent im Museum Hessenpark
+status: angekündigt
+start: '2026-11-28'
+end: '2026-12-13'
+all_day: true
+location: neu-anspach
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+- https://www.hessenpark.de
+checked_at: '2026-11-03'
+status_note: Portal nennt 28.11.-13.12.2026 (Freilichtmuseum Hessenpark, Neu-Anspach;
+  Vorjahr 29.11.-14.12.2025, erste drei Adventswochenenden); hessenpark.de-Terminseite
+  nicht auswertbar.

@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Weinheimer Weihnachtsmarkt
+status: bestätigt
+start: '2026-12-05'
+end: '2026-12-20'
+all_day: true
+location: weinheim
+sources:
+- https://www.weinheim.de/startseite/stadtthemen/weinheimer+weihnachtsmarkt.html
+checked_at: '2026-11-03'
+homepage: https://www.weinheim.de/startseite/stadtthemen/weinheimer+weihnachtsmarkt.html
+opening_hours: 'Nur Fr-So (05.-06.12., 11.-13.12., 18.-20.12.): Fr 16-21 Uhr, Sa/So 13-21 Uhr'
+status_note: 'Widerspruch: Stadtseite nennt 27.11.-20.12. (Fr-So an den Adventswochenenden); Portale nennen 05.-21.12. Eingetragen ist die Schnittmenge 05.12.-20.12.'

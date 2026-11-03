@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T16:17:02.217224+00:00",
+  "updated": "2026-11-03T10:37:30.482037+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -41,19 +41,19 @@
       "nr": 4,
       "type": "2",
       "name": "Kalender vorbereiten",
-      "status": " ",
+      "status": "X",
       "file": "004-2-541372-kalender-vorbereiten.md",
       "meta": {
-        "review": "none",
         "assignee-type": "user",
-        "source": "doc/spec.md#Manuelle Schritte"
+        "source": "doc/spec.md#Manuelle Schritte",
+        "review": "user"
       }
     },
     "d1e48e": {
       "nr": 5,
       "type": "2",
       "name": "Erste Suche Weihnachtsm\u00e4rkte",
-      "status": " ",
+      "status": "X",
       "file": "005-2-d1e48e-erste-suche-weihnachtsm-rkte.md",
       "meta": {
         "review": "user",

@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Mainzer Weihnachtsmarkt
+status: bestätigt
+start: '2026-11-26'
+end: '2026-12-23'
+homepage: https://www.mainz.de/weihnachtsmarkt
+opening_hours: 'Am 23.12. bis 19 Uhr'
+all_day: true
+location: mainz
+sources:
+- https://www.mainz.de/weihnachtsmarkt
+checked_at: '2026-11-03'

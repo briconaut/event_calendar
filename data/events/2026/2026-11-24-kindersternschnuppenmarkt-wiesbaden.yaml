@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Kindersternschnuppenmarkt Wiesbaden
+status: bestätigt
+start: '2026-11-24'
+end: '2026-12-30'
+all_day: true
+location: wiesbaden
+sources:
+- https://wiesbaden.de/sternschnuppenmarkt
+checked_at: '2026-11-03'
+status_note: 'Stadt Wiesbaden: Kindersternschnuppenmarkt 24.11.-30.12.2026 auf dem
+  Luisenplatz (Basteln, Karussell, Wichtelwald); Teil des Sternschnuppenmarkt-Angebots.'

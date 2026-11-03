@@ -1,0 +1,14 @@
+calendar: weihnachtsmaerkte
+title: Ludwigshafener Weihnachtsmarkt
+status: bestätigt
+start: '2026-11-16'
+end: '2026-12-23'
+all_day: true
+location: ludwigshafen
+sources:
+- https://lukom.com/events/weihnachtsmarkt/
+- https://www.festivalsindeutschland.de/festival/weihnachtsmarkt-lichterzauber-ludwigshafen
+checked_at: '2026-11-03'
+status_note: 'Widerspruch bei Beginn: Veranstalter LUKOM nennt 11.11.-23.12.2026 (Berliner Platz), Portal festivalsindeutschland nennt Beginn 16.11. Eingetragen ist die Schnittmenge 16.11.-23.12.'
+opening_hours: So-Do 12-21 Uhr, Fr/Sa 12-21:30 Uhr; geschlossen an Totensonntag und Volkstrauertag
+homepage: https://lukom.com/events/weihnachtsmarkt/

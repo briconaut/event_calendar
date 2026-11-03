@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Friedberger Weihnachtsmarkt an der Burg
+status: angekündigt
+start: '2026-12-04'
+end: '2026-12-06'
+all_day: true
+location: friedberg
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-bad-nauheim
+checked_at: '2026-11-03'
+status_note: Portal nennt 04.-06.12.2026; Stadtseite friedberg-hessen.de ohne Termin,
+  keine Bestätigung gefunden.

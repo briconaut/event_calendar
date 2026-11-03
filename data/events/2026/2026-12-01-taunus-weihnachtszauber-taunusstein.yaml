@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Taunus Weihnachtszauber Taunusstein (Neuhof)
+status: angekündigt
+start: '2026-12-01'
+end: '2026-12-22'
+all_day: true
+location: taunusstein
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunusstein
+checked_at: '2026-11-03'
+status_note: Nur Portal nennt 01.-22.12.2026 (Heinz-Hankammer-Straße, Stadtteil Neuhof);
+  Beschreibung deutet auf Markt am Hotelstandort hin; Veranstalter/Stadtquelle nicht
+  gefunden.

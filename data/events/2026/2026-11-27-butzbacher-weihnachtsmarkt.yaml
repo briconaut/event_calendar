@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Butzbacher Weihnachtsmarkt
+status: angekündigt
+start: '2026-11-27'
+end: '2026-11-29'
+all_day: true
+location: butzbach
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+checked_at: '2026-11-03'
+status_note: Portal nennt 27.-29.11.2026; stadt-butzbach.de-Terminkalender nicht abrufbar,
+  keine Bestätigung gefunden.

@@ -1,0 +1,17 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Hochheimer Markt - Abschlussfeuerwerk
+status: angekündigt
+start: 2026-11-10T19:00
+end: null
+all_day: false
+location: hochheim
+parent: 2026/2026-11-06-hochheimer-markt
+sources:
+- https://www.festivalsindeutschland.de/festival/hochheimer-markt
+checked_at: '2026-11-03'
+status_note: Nur Portal nennt großes Abschlussfeuerwerk am Dienstag 10.11.2026 ca.
+  19 Uhr (Zuschauer am Festgelände und umliegenden Erhebungen), Abschluss traditionell
+  am Dienstag nach Allerseelen; Startort nicht benannt, keine Stadtquelle für 2026
+  (Stadt Hochheim veröffentlichte 2023 eine Allgemeinverfügung zum Feuerwerk).

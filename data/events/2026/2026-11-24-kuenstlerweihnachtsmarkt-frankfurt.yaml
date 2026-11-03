@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Künstlerweihnachtsmarkt Frankfurt
+status: angekündigt
+start: '2026-11-24'
+end: '2026-12-21'
+all_day: true
+location: frankfurt
+sources:
+- https://www.meininger-hotels.com/blog/weihnachtsmarkt-frankfurt/
+checked_at: '2026-11-03'
+status_note: Nur Hotelblog nennt für die 104. Ausgabe Ausstellungen Paulskirche 24.11.-20.12.
+  und Römer 04.-21.12.2026; Pixidia nennt 2026 als unbestätigt; bbk-frankfurt.de nicht
+  geprüft.

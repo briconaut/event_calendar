@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Weihnachtsmarkt in der Burg Bad Vilbel
+status: angekündigt
+start: '2026-12-11'
+end: '2026-12-13'
+all_day: true
+location: bad-vilbel
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-bad-nauheim
+checked_at: '2026-11-03'
+status_note: Portal nennt 11.-13.12.2026 (3. Advent, wie Vorjahre); Stadtseite bad-vilbel.de
+  nicht auswertbar, keine Bestätigung gefunden.

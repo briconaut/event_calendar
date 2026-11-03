@@ -5,7 +5,7 @@
 - ID: e2b915
 - Type: 1
 - Number: 010
-- Status: C
+- Status: X
 - Phase: 001-Geruest
 - review: subagent
 - assignee-type: agent
@@ -21,3 +21,5 @@
 - 2026-10-13T11:50:49+00:00: M [ ] -> [~] | starting
 - 2026-10-13T11:50:49+00:00: T [~] -> [~] | tests/test_ec.py: 34 Tests (validate, render, Gerüste, list, CLI), alle grün.
 - 2026-10-13T11:50:49+00:00: M [~] -> [C] | Subagent-Review der Tests steht aus
+- 2026-11-02T16:22:15+00:00: T [C] -> [C] | Subagent-Review: 34 Tests laufen gruen (unittest discover), ec.py validate fehlerfrei. Abdeckung validate (Schema, Dateiname, Referenzen, Kategorie, Zeitmodell, Region/include/exclude, Dubletten), render (Summary, Ende exklusiv, Zeitzone, Footer/Hash-Stabilitaet, Filter), new-event/new-location/list, CLI-Exitcodes; nur Standardbibliothek plus ec-eigene Abhaengigkeiten. Assertions konkret. Hinweis (nicht blockierend): Zeile 273 in test_cancelled_and_past_are_excluded ist redundant; CLI-Subbefehle new-event/new-location/list nur ueber Funktionen getestet.
+- 2026-11-02T16:22:15+00:00: M [C] -> [X] | Review bestanden: Kriterien erfuellt, keine Scheintests von Gewicht
