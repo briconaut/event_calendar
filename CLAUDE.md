@@ -31,7 +31,9 @@ Tasks aus `doc/tasks` arbeitet der Projekt-Agent `event-worker` ab (`.claude/age
 **Weihnachtsmärkte** (`weihnachtsmaerkte`): mehrtägige Märkte von Stadt, Gemeinde oder Veranstalter,
 inkl. verwandter Märkte (Sternschnuppenmarkt, Wintermärkte, Mittelalter-Weihnachtsmärkte). Märkte von
 nur einem Wochenende nur bei überregionaler Bewerbung (Burg-/Schlossweihnacht). Eintägige Basare und
-reine Eisbahnen/„Winterwelten“ bleiben draußen.
+reine Eisbahnen/„Winterwelten“ bleiben draußen. Winterliche Lichterpfade der Advents- und Weihnachtszeit
+(Winterlichter Palmengarten, Christmas Garden, Lichter in Zoos/Gärten) stehen hier, nicht als Lichtfest
+in `events`.
 
 **Feuerwerke** (`feuerwerke`): **Shows** – Pyrotechnik, Drohnen-, Laser- und Illuminationsshows
 (`show_types`). Silvester nur offiziell und öffentlich. Pro Datum und Ort ein eigener Termin. Zeit und
@@ -39,7 +41,7 @@ Ort beziehen sich auf die Show selbst; das übergeordnete Event steht in `parent
 
 **Events und Feste** (`events`): Kategorien aus `config/settings.yaml` – Großevents mit saisonalem,
 regionalem oder historischem Bezug, Jahrmärkte mit Fahrgeschäften, regionale Ausstellungen, Paraden und
-Umzüge, Weinfeste, Mittelalter-/Historienfeste, Lichtfeste, Stadt- und Hafenfeste, Saisonmärkte außer
+Umzüge, Weinfeste, Mittelalter-/Historienfeste, Lichtfeste außerhalb der Weihnachtszeit, Stadt- und Hafenfeste, Saisonmärkte außer
 Weihnachten. Kerben und Dorffeste bleiben draußen. Ein mehrtägiges Lichtfest steht hier; seine zeitlich
 festgelegte Show zusätzlich im Kalender Feuerwerke.
 
