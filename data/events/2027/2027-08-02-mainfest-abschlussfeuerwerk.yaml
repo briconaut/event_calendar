@@ -1,0 +1,15 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Mainfest - Abschlussfeuerwerk
+status: geschätzt
+start: 2027-08-02T22:00
+end: null
+all_day: false
+location: frankfurt
+venue: Main (Höhenfeuerwerk über dem Main, Mainkai/Eiserner Steg)
+sources:
+- https://www.festivalsindeutschland.de/festival/frankfurter-mainfest
+- https://www.festivalsindeutschland.de/festival/frankfurter-mainfest/2025
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: Mainfest Fr-Mo, Abschlussfeuerwerk jeweils am Montagabend, traditionell zwischen 22 und 23 Uhr (2025: Fr 01.08.-Mo 04.08.; 2026: Fr 31.07.-Mo 03.08.; 2024 laut Presse Fr 02.08.-Mo 05.08.). Montage jeweils der erste Montag im August -> Mo 02.08.2027. Alternativ wäre Mo 09.08.2027 denkbar. Kein Termin 2027 veröffentlicht. Genaue Abschussstelle in den Quellen nicht genannt.'
