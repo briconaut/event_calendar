@@ -110,8 +110,7 @@ series:
   has_fireworks: false
 - id: palmengarten-winterlichter
   name: Winterlichter im Palmengarten
-  calendar: events
-  category: lichtfest
+  calendar: weihnachtsmaerkte
   major: false
   homepage: https://www.visitfrankfurt.travel/en/event/winter-lights-winterlichter-at-the-palmengarten
   sources:
