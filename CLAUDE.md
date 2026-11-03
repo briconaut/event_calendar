@@ -24,6 +24,8 @@ Aufgaben und ihre Skills:
 
 Fertige Aufträge für Sessions und Routinen liegen in `prompts/`.
 
+Tasks aus `doc/tasks` arbeitet der Projekt-Agent `event-worker` ab (`.claude/agents/event-worker.md`; hat WebSearch und Google-Kalender-Zugriff), nicht der Plugin-Agent `taskctl-worker`. Review-Gates und Remote-Aktionen bleiben beim User.
+
 ## Was in welchen Kalender gehört
 
 **Weihnachtsmärkte** (`weihnachtsmaerkte`): mehrtägige Märkte von Stadt, Gemeinde oder Veranstalter,
