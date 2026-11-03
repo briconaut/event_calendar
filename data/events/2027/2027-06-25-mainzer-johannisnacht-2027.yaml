@@ -1,0 +1,15 @@
+calendar: events
+category: stadtfest
+title: Mainzer Johannisnacht 2027
+status: bestätigt
+start: '2027-06-25'
+end: '2027-06-28'
+all_day: true
+location: mainz
+series: mainzer-johannisnacht
+venue: Mainzer Altstadt
+sources:
+- https://www.mainz.de/en/pressemeldungen/Mainz/2026/juni/mainz-feiert-gutenberg-johannisnacht-ueber-zeugt-trotz-grosser-hitze-mit-friedlicher-fest-stimmung
+checked_at: '2026-11-03'
+homepage: https://www.mainzer-johannisnacht.de
+status_note: Stadt Mainz nennt in der Pressemitteilung zur Johannisnacht 2026 den nächsten Termin Fr 25.06.-Mo 28.06.2027. 2026 endete das Fest mit einer Drohnenshow (400 Drohnen), Fortführung 2027 laut Stadt offen; daher kein Show-Termin angelegt.

@@ -1,0 +1,15 @@
+calendar: events
+category: parade
+title: Kölner Rosenmontagszug 2027
+status: angekündigt
+start: '2027-02-08'
+end: '2027-02-08'
+all_day: true
+location: koeln
+series: koelner-rosenmontagszug
+sources:
+- https://www.koeln.de/karneval/wann-ist-karneval/
+- https://www.koeln.de/karneval/rosenmontagszug-koeln/
+checked_at: '2026-11-03'
+homepage: https://www.koeln.de/karneval/rosenmontagszug-koeln/
+status_note: Rosenmontag 2027 = 08.02.2027 laut koeln.de (Weiberfastnacht 04.02., Aschermittwoch 10.02.); Termin folgt dem Ostertermin. Zugweg und Startzeit 2027 noch nicht veröffentlicht; offizielle Seite des Festkomitees Kölner Karneval nicht geprüft.

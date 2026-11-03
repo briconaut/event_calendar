@@ -1,0 +1,15 @@
+name: Bonn
+state: Nordrhein-Westfalen
+region: rheinland
+series:
+- id: puetzchens-markt
+  name: Pützchens Markt
+  calendar: events
+  category: jahrmarkt
+  major: true
+  homepage: https://www.bonn.de/veranstaltungskalender/veranstaltungen/hauptkalender/maerkte/Puetzchens-Markt.php
+  sources:
+  - https://bonn-region.de/puetzchens-markt-en.html
+  - https://www.bonn.de/veranstaltungskalender/veranstaltungen/hauptkalender/maerkte/Puetzchens-Markt.php
+  typical_period: zweites Septemberwochenende, Fr-Di
+  has_fireworks: false

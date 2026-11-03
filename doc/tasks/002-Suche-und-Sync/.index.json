@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T10:37:30.482037+00:00",
+  "updated": "2026-11-03T11:18:48.782041+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -65,31 +65,31 @@
       "nr": 6,
       "type": "2",
       "name": "Erste Suche Feuerwerke",
-      "status": " ",
+      "status": "X",
       "file": "006-2-9a7221-erste-suche-feuerwerke.md",
       "meta": {
-        "review": "user",
         "assignee-type": "agent",
-        "source": "doc/spec.md#Kalender/Feuerwerke"
+        "source": "doc/spec.md#Kalender/Feuerwerke",
+        "review": "user"
       }
     },
     "de5a72": {
       "nr": 7,
       "type": "2",
       "name": "Erste Suche Events und Feste",
-      "status": " ",
+      "status": "X",
       "file": "007-2-de5a72-erste-suche-events-und-feste.md",
       "meta": {
-        "review": "user",
         "assignee-type": "agent",
-        "source": "doc/spec.md#Kalender/Events und Feste"
+        "source": "doc/spec.md#Kalender/Events und Feste",
+        "review": "user"
       }
     },
     "33787e": {
       "nr": 8,
       "type": "2",
       "name": "Erster Sync",
-      "status": " ",
+      "status": "X",
       "file": "008-2-33787e-erster-sync.md",
       "meta": {
         "review": "user",

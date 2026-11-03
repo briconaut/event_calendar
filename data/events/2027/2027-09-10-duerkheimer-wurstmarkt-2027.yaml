@@ -1,0 +1,15 @@
+calendar: events
+category: weinfest
+title: Dürkheimer Wurstmarkt 2027
+status: geschätzt
+start: '2027-09-10'
+end: '2027-09-20'
+all_day: true
+location: bad-duerkheim
+series: duerkheimer-wurstmarkt
+venue: Festplatz Bad Dürkheim
+sources:
+- https://www.festivalsindeutschland.de/festival/duerkheimer-wurstmarkt
+- https://www.regioactive.de/fest/duerkheimer-wurstmarkt-2026-termine-tickets-b8d1c9d9a605
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: 2026 Fr 11.-Di 15.09. und Fr 18.-Mo 21.09. (zwei Festwochenenden, Feuerwerke am Festmontag und Schlussmontag). 2027 analog Fr 10.09. bis Mo 20.09.; es liegt kein Termin 2027 vor. Die Festtage sind zwei Blöcke mit Pause (Di-Do dazwischen); eingetragen ist der Gesamtrahmen.'

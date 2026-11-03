@@ -1,4 +1,26 @@
 name: Mainz
 state: Rheinland-Pfalz
 region: rhein-main
-series: []
+series:
+- id: mainzer-rosenmontagszug
+  name: Mainzer Rosenmontagszug
+  calendar: events
+  category: parade
+  major: true
+  homepage: https://www.festivalsindeutschland.de/festival/mainzer-rosenmontagszug
+  sources:
+  - https://www.festivalsindeutschland.de/festival/mainzer-rosenmontagszug
+  - https://www.koeln.de/karneval/wann-ist-karneval/
+  - https://www.rheinhessen.de/en/e-mainzer-rosenmontagszug-2026-carnival-parade
+  typical_period: Rosenmontag, Februar/März
+  has_fireworks: false
+- id: mainzer-johannisnacht
+  name: Mainzer Johannisnacht
+  calendar: events
+  category: stadtfest
+  major: false
+  homepage: https://www.mainzer-johannisnacht.de
+  sources:
+  - https://www.mainz.de/en/pressemeldungen/Mainz/2026/juni/mainz-feiert-gutenberg-johannisnacht-ueber-zeugt-trotz-grosser-hitze-mit-friedlicher-fest-stimmung
+  typical_period: Wochenende um Johannis (Ende Juni), Fr-Mo
+  has_fireworks: false

@@ -1,0 +1,16 @@
+calendar: events
+category: stadtfest
+title: Museumsuferfest Frankfurt 2027
+status: geschätzt
+start: '2027-08-27'
+end: '2027-08-29'
+all_day: true
+location: frankfurt
+series: museumsuferfest
+venue: Frankfurter Museumsufer (Mainufer)
+sources:
+- https://www.visitfrankfurt.travel/fileadmin/Mediendatenbank/Dokumente/PM/PM_MUF_2026.pdf
+- https://www.visitfrankfurt.travel/en/experience/festival-and-events/museum-embankment-festival
+checked_at: '2026-11-03'
+homepage: https://www.museumsufer.de
+status_note: 'Geschätzt aus Muster: 2025 29.-31.08., 2026 28.-30.08. (letztes Augustwochenende, Fr-So) -> Fr 27.-So 29.08.2027. Kein Termin 2027 veröffentlicht. Abschlussfeuerwerk siehe parent-verknüpften Termin im Kalender feuerwerke.'

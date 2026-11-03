@@ -1,0 +1,16 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Rhein in Flammen Sankt Goar
+status: geschätzt
+start: '2027-09-18'
+end: '2027-09-18'
+all_day: true
+time_unknown: true
+location: sankt-goar
+venue: Burg Rheinfels / Rhein bei St. Goar und St. Goarshausen
+sources:
+- https://www.rhein-in-flammen.com/services/files/PM_RheininFlammen2025.docx
+- https://www.festivalsindeutschland.de/festival/rhein-in-flammen-st-goar-st-goarshausen
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: 2025 Sa 20.09., 2026 Sa 19.09. (dritter Samstag im September) -> Sa 18.09.2027. Kein Termin 2027 veröffentlicht.'

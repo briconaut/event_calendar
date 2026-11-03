@@ -1,0 +1,15 @@
+calendar: events
+category: weinfest
+title: Rheingauer Weinwoche 2027 (50. Ausgabe)
+status: bestätigt
+start: '2027-08-13'
+end: '2027-08-22'
+all_day: true
+location: wiesbaden
+series: rheingauer-weinwoche
+venue: 'Wiesbaden Innenstadt: Marktkirche, Schlossplatz, Dern''sches Gelände'
+sources:
+- https://www.wiesbaden.de/microsite/rheingauer-weinwoche/fest/index.php
+checked_at: '2026-11-03'
+homepage: https://www.wiesbaden.de/microsite/rheingauer-weinwoche/fest/index.php
+status_note: Stadt Wiesbaden nennt 13.-22.08.2027 (50. Weinwoche), Marktkirche, Schlossplatz und Dern'sches Gelände.

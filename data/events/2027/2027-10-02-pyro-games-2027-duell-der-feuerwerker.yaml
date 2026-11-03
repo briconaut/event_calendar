@@ -1,0 +1,17 @@
+calendar: feuerwerke
+show_types:
+- pyro
+- laser
+title: Pyro Games 2027 - Duell der Feuerwerker
+status: angekündigt
+start: '2027-10-02'
+end: '2027-10-02'
+all_day: true
+time_unknown: true
+location: mannheim
+venue: Maimarktgelände (laut Portal-URL; Ort nicht von Veranstalterseite bestätigt)
+sources:
+- https://www.hamburg-tourism.de/sehen-erleben/veranstaltungen/veranstaltungskalender/pyro-games-2027-duell-der-feuerwerker/
+- https://www.regioactive.de/fest/pyro-games-2027-duell-der-feuerwerker-mannheim-maimarktgelaende-2027-10-02-fFs3PwygKf
+checked_at: '2026-11-03'
+status_note: 'Tourismusportal listet Mannheim am 02.10.2027 (drei Pyro-Teams, Licht- und Lasershow zum Finale); Uhrzeit und Ort dort nicht genannt, Maimarktgelände nur aus dem Regioactive-Link. Veranstalterseite nicht geprüft.'

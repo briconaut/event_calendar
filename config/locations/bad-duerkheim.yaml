@@ -1,4 +1,14 @@
 name: Bad Dürkheim
 state: Rheinland-Pfalz
 region: rheinhessen-pfalz
-series: []
+series:
+- id: duerkheimer-wurstmarkt
+  name: Dürkheimer Wurstmarkt
+  calendar: events
+  category: weinfest
+  major: true
+  sources:
+  - https://www.festivalsindeutschland.de/festival/duerkheimer-wurstmarkt
+  - https://www.regioactive.de/fest/duerkheimer-wurstmarkt-2026-termine-tickets-b8d1c9d9a605
+  typical_period: zweites und drittes Septemberwochenende
+  has_fireworks: true

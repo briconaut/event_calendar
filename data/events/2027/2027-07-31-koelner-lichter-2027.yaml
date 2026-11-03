@@ -1,0 +1,18 @@
+calendar: feuerwerke
+show_types:
+- pyro
+- drone
+title: Kölner Lichter 2027
+status: angekündigt
+start: '2027-07-31'
+end: '2027-07-31'
+all_day: true
+time_unknown: true
+location: koeln
+venue: Rheinufer zwischen Hohenzollernbrücke und Bastei
+sources:
+- https://cologne-tourism.com/experiences-lifestyle/events/detail/koelner-lichter
+- https://www.echo24.de/welt/koelner-lichter-debatte-um-zukunft-nach-schwacher-drohnenshow-zr-94425594.html
+- https://www.koeln.de/?p=100485
+checked_at: '2026-11-03'
+status_note: 'Termin 31.07.2027 (22. Ausgabe) laut Presseberichten nach der Ausgabe 2026 und Vorverkauf der Tribünen; offizielle Veranstalterseite nicht geprüft. Uhrzeit 2027 unbekannt (2026: Drohnenshow ca. 22:15, Feuerwerk 23:00 Uhr, laut koeln.de); Drohnenshow-Umfang 2027 offen.'

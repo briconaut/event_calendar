@@ -1,0 +1,16 @@
+calendar: events
+category: jahrmarkt
+title: Frühjahrs-Dippemess Frankfurt 2027
+status: geschätzt
+start: '2027-03-19'
+end: '2027-04-11'
+all_day: true
+location: frankfurt
+series: fruehjahrs-dippemess
+venue: Festplatz am Ratsweg, Frankfurt-Ostend
+sources:
+- https://www.festivalsindeutschland.de/festival/fruehjahrs-dippemess
+- https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+checked_at: '2026-11-03'
+homepage: https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+status_note: 'Geschätzt, schwach belegt: 2025 04.-27.04. (Ostern 20.04.), 2026 27.03.-19.04. (Ostern 05.04.); jeweils 24 Tage Fr-So über Ostern. Ostern 2027 = 28.03.; angenommen Fr 19.03.-So 11.04.2027. Kein Termin 2027 veröffentlicht; Lage relativ zu Ostern schwankt (8 bzw. 16 Tage Vorlauf).'
