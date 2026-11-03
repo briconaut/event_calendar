@@ -1,0 +1,14 @@
+calendar: weihnachtsmaerkte
+title: Wormser Weihnacht
+status: angekündigt
+start: '2026-11-20'
+end: '2026-12-23'
+all_day: true
+location: worms
+sources:
+- https://www.festivalsindeutschland.de/festival/wormser-weihnacht
+checked_at: '2026-11-03'
+homepage: https://www.worms-erleben.de/erleben/index.php
+opening_hours: Totensonntag (22.11.) geschlossen
+status_note: Datum nur aus Verzeichnis festivalsindeutschland.de; Stadt-/Veranstalterseite
+  nennt keine Termine.

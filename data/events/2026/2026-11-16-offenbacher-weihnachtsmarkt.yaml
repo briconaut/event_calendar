@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Offenbacher Weihnachtsmarkt
+status: bestätigt
+start: '2026-11-16'
+end: '2026-12-30'
+all_day: true
+location: offenbach
+sources:
+- https://www.offenbach.de/weihnachtsmarkt
+checked_at: '2026-11-03'
+homepage: https://www.offenbach.de/weihnachtsmarkt
+opening_hours: Geschlossen am 23.11. sowie 24.-26.12.

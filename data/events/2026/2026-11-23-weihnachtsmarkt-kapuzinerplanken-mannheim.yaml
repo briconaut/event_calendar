@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Weihnachtsmarkt Kapuzinerplanken Mannheim
+status: bestätigt
+start: '2026-11-23'
+end: '2026-12-23'
+all_day: true
+location: mannheim
+sources:
+- https://www.vtm-ma.de
+checked_at: '2026-11-03'
+homepage: https://www.vtm-ma.de
+opening_hours: Öffnungszeiten laut Quelle noch nicht veröffentlicht
+status_note: Veranstalter VTM nennt 23.11.-23.12.; Portal nennt 24.12. als Ende.

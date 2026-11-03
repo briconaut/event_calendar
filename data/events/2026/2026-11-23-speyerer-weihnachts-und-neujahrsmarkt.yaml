@@ -1,0 +1,14 @@
+calendar: weihnachtsmaerkte
+title: Speyerer Weihnachts- und Neujahrsmarkt
+status: bestätigt
+start: '2026-11-23'
+end: '2027-01-10'
+all_day: true
+location: speyer
+sources:
+- https://www.speyer.de/de/veranstaltungen/messen-maerkte-und-veranstaltungen/weihnachts-neujahrsmarkt/
+checked_at: '2026-11-03'
+homepage: https://www.speyer.de/de/veranstaltungen/messen-maerkte-und-veranstaltungen/weihnachts-neujahrsmarkt/
+opening_hours: Imbiss Mo-Do/So 11-21, Fr/Sa 11-22 Uhr; Verkaufsstände täglich 11-20
+  Uhr; 25./26.12. geschlossen
+status_note: Stadtseite nennt 23.11.2026-10.01.2027; Portal nennt abweichend 09.01.2027.

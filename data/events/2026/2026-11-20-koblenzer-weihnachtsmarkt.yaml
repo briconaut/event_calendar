@@ -1,0 +1,14 @@
+calendar: weihnachtsmaerkte
+title: Koblenzer Weihnachtsmarkt
+status: bestätigt
+start: '2026-11-20'
+end: '2027-01-03'
+all_day: true
+location: koblenz
+sources:
+- https://www.koblenzer-weihnachtsmarkt.de
+- https://www.festivalsindeutschland.de/festival/koblenzer-weihnachtsmarkt
+checked_at: '2026-11-03'
+homepage: https://www.koblenzer-weihnachtsmarkt.de
+status_note: Veranstalterseite nennt 20.11.2026-03.01.2027; Hauptmärkte Jesuitenplatz/Liebfrauenkirche
+  laut Portal nur bis 22.12. Portal nennt abweichend 22.11. als Start.
