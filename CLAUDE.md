@@ -66,6 +66,12 @@ Jede Location (`config/locations/<ort>.yaml`, eine Stadt oder Gemeinde) hat eine
 - `geschätzt`: aus Vorjahresmuster bzw. `typical_period` abgeleitet; Begründung in `status_note`.
 - `abgesagt`: bleibt im Repo, `calendar-sync` löscht ihn aus dem Kalender.
 
+**Widersprüchliche Zeiträume**: Nennen Quellen unterschiedliche Zeiträume, wird nur die Schnittmenge
+als `start`/`end` eingetragen. Der Widerspruch steht im Termin selbst (`status_note`) mit allen
+Varianten und ihren Quellen sowie dem eingetragenen Zeitraum. Widersprüche, die sich nicht als
+zusammenhängende Schnittmenge ausdrücken lassen (z. B. getrennte Wochenenden), werden nicht
+stillschweigend aufgelöst, sondern dem User gemeldet.
+
 ## Herkunft der Inhalte
 
 - Jede Angabe stammt aus einer Quelle in `sources`; `checked_at` ist das Datum der letzten Prüfung.

@@ -31,3 +31,7 @@ Statusregeln und Herkunftsregeln: `CLAUDE.md`.
 
 Tabelle: Event-ID, alter → neuer Status, Änderung, Quelle. Fertig ist die Prüfung, wenn jeder Termin der
 Prüfliste genau ein Ergebnis aus Schritt 3 hat.
+
+## Widersprüchliche Zeiträume
+
+Nennen Quellen unterschiedliche Zeiträume: nur die Schnittmenge als `start`/`end` eintragen und den Widerspruch mit allen Varianten und Quellen in `status_note` vermerken (Regel in `CLAUDE.md`, Abschnitt „Status eines Termins“). Nicht zusammenhängende Schnittmengen dem User melden.

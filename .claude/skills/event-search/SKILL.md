@@ -40,3 +40,7 @@ für jede Aufnahmeentscheidung.
 
 Tabelle aller Kandidaten aus Schritt 4: Titel, Ort, Datum, Entscheidung, Grund bzw. Event-ID.
 Fertig ist die Suche, wenn jeder Kandidat eine Entscheidung hat und `ec.py validate` fehlerfrei ist.
+
+## Widersprüchliche Zeiträume
+
+Nennen Quellen unterschiedliche Zeiträume: nur die Schnittmenge als `start`/`end` eintragen und den Widerspruch mit allen Varianten und Quellen in `status_note` vermerken (Regel in `CLAUDE.md`, Abschnitt „Status eines Termins“). Nicht zusammenhängende Schnittmengen dem User melden.
