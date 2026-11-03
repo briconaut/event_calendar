@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Heidelberger Weihnachtsmarkt
+status: bestätigt
+start: '2026-11-23'
+end: '2026-12-22'
+homepage: https://www.heidelberg-marketing.de/veranstaltungen/heidelberger-weihnachtsmarkt
+opening_hours: 'So und Mo 11-21 Uhr, Sa 11-22 Uhr (Di-Fr laut Quelle nicht angegeben)'
+all_day: true
+location: heidelberg
+sources:
+- https://www.heidelberg-marketing.de/veranstaltungen/heidelberger-weihnachtsmarkt
+checked_at: '2026-11-03'
