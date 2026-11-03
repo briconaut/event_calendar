@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02T16:23:13.667702+00:00",
+  "updated": "2026-11-03T09:07:13.927356+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -41,7 +41,7 @@
       "nr": 4,
       "type": "2",
       "name": "Kalender vorbereiten",
-      "status": "R",
+      "status": "B",
       "file": "004-2-541372-kalender-vorbereiten.md",
       "meta": {
         "assignee-type": "user",
