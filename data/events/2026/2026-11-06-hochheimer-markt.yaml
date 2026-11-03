@@ -6,6 +6,7 @@ start: '2026-11-06'
 end: '2026-11-10'
 all_day: true
 location: hochheim
+series: hochheimer-markt
 sources:
 - https://www.hochheim-tourismus.de
 - https://tourismus.wiesbaden.de/downloads/dokumente/Eventkalender-2026.pdf
