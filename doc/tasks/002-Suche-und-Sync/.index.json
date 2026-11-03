@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T10:04:41.766178+00:00",
+  "updated": "2026-11-03T10:37:30.482037+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -53,7 +53,7 @@
       "nr": 5,
       "type": "2",
       "name": "Erste Suche Weihnachtsm\u00e4rkte",
-      "status": "R",
+      "status": "X",
       "file": "005-2-d1e48e-erste-suche-weihnachtsm-rkte.md",
       "meta": {
         "review": "user",
