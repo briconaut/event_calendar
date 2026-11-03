@@ -1,0 +1,15 @@
+calendar: events
+category: parade
+title: Wiesbadener Fastnachtsumzug 2027
+status: bestätigt
+start: '2027-02-07'
+end: '2027-02-07'
+all_day: true
+location: wiesbaden
+series: wiesbadener-fastnachtsumzug
+venue: Innenstadt, Start Friedrich-Ebert-Allee
+homepage: https://www.wiesbaden.de/leben-in-wiesbaden/freizeit/feste/fastnacht/fastnachtsumzug.php
+opening_hours: Start 12:11 Uhr
+sources:
+- https://www.wiesbaden.de/leben-in-wiesbaden/freizeit/feste/fastnacht/fastnachtsumzug.php
+checked_at: '2026-11-03'

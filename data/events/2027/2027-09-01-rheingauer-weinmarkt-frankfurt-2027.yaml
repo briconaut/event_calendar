@@ -1,0 +1,15 @@
+calendar: events
+category: weinfest
+title: Rheingauer Weinmarkt Frankfurt 2027
+status: bestätigt
+start: '2027-09-01'
+end: '2027-09-10'
+all_day: true
+location: frankfurt
+series: rheingauer-weinmarkt-frankfurt
+venue: Freßgass (Große Bockenheimer Straße/Kalbächer Gasse)
+homepage: https://www.visitfrankfurt.travel/en/experience/festival-and-events/rheingau-wine-festival
+opening_hours: täglich 12-23 Uhr
+sources:
+- https://www.visitfrankfurt.travel/en/experience/festival-and-events/rheingau-wine-festival
+checked_at: '2026-11-03'

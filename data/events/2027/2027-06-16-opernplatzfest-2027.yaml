@@ -1,0 +1,17 @@
+calendar: events
+category: stadtfest
+title: Opernplatzfest 2027
+status: geschätzt
+start: '2027-06-16'
+end: '2027-06-25'
+all_day: true
+location: frankfurt
+series: opernplatzfest
+venue: Opernplatz vor der Alten Oper
+homepage: https://www.opernplatzfest.eu
+sources:
+- https://www.opernplatzfest.eu
+- https://www.festivalsindeutschland.de/festival/opernplatzfest-frankfurt
+checked_at: '2026-11-03'
+status_note: Geschätzt aus Muster 2026 (Mi 17.-Fr 26.06., zehn Tage) -> Mi 16.-Fr
+  25.06.2027. Kein Termin 2027 veröffentlicht.

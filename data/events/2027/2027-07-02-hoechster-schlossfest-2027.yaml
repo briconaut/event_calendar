@@ -1,0 +1,16 @@
+calendar: events
+category: stadtfest
+title: Höchster Schlossfest 2027
+status: geschätzt
+start: '2027-07-02'
+end: '2027-07-11'
+all_day: true
+location: hoechst
+series: hoechster-schlossfest
+venue: Brüningpark, Mainufer und Altstadt Höchst
+homepage: https://www.schloss-fest.de
+sources:
+- https://www.festivalsindeutschland.de/festival/hoechster-schlossfest
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: zehn Tage Fr-So Anfang Juli (2026: 03.-12.07.)
+  -> 02.-11.07.2027. Kein Termin 2027 veröffentlicht.'

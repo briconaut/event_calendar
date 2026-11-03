@@ -1,0 +1,15 @@
+calendar: events
+category: stadtfest
+title: Theatrium 2027
+status: bestätigt
+start: '2027-06-11'
+end: '2027-06-13'
+all_day: true
+location: wiesbaden
+series: theatrium
+venue: Wilhelmstraße, Kurhaus und Bowling Green
+homepage: https://www.wiesbaden.de/freizeit/feste/theatrium
+opening_hours: Fr 14-2 Uhr, Sa 12-2 Uhr, So 12-21 Uhr
+sources:
+- https://www.wiesbaden.de/freizeit/feste/theatrium
+checked_at: '2026-11-03'

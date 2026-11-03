@@ -1,0 +1,14 @@
+name: Frankfurt-Höchst
+state: Hessen
+region: rhein-main
+series:
+- id: hoechster-schlossfest
+  name: Höchster Schlossfest
+  calendar: events
+  category: stadtfest
+  major: false
+  homepage: https://www.schloss-fest.de
+  sources:
+  - https://www.festivalsindeutschland.de/festival/hoechster-schlossfest
+  typical_period: Juli, zehn Tage Fr-So, Abschlussfeuerwerk über dem Main
+  has_fireworks: true

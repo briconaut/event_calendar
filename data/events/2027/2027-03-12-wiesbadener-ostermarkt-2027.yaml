@@ -1,0 +1,15 @@
+calendar: events
+category: saisonmarkt
+title: Wiesbadener Ostermarkt 2027
+status: bestätigt
+start: '2027-03-12'
+end: '2027-03-14'
+all_day: true
+location: wiesbaden
+series: wiesbadener-ostermarkt
+venue: Innenstadt; Stoffmarkt am Sonntag auf dem Dern'schen Gelände
+homepage: https://www.wiesbaden.de/freizeit/maerkte/ostermarkt
+opening_hours: Fr 11-20 Uhr, Sa 10-20 Uhr, So 10-18 Uhr
+sources:
+- https://www.wiesbaden.de/freizeit/maerkte/ostermarkt
+checked_at: '2026-11-03'

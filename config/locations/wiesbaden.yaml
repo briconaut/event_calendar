@@ -12,3 +12,53 @@ series:
   - https://www.wiesbaden.de/microsite/rheingauer-weinwoche/fest/index.php
   typical_period: August, zehn Tage
   has_fireworks: false
+- id: theatrium
+  name: Theatrium – Wilhelmstraßenfest
+  calendar: events
+  category: stadtfest
+  major: true
+  homepage: https://www.wiesbaden.de/freizeit/feste/theatrium
+  sources:
+  - https://www.wiesbaden.de/freizeit/feste/theatrium
+  typical_period: Juni, Fr-So
+  has_fireworks: false
+- id: wiesbadener-fruehlingsfest
+  name: Wiesbadener Frühlingsfest
+  calendar: events
+  category: jahrmarkt
+  major: false
+  homepage: https://www.wiesbaden.de/freizeit/feste/fruehlingsfest
+  sources:
+  - https://www.wiesbaden.de/freizeit/feste/fruehlingsfest
+  typical_period: Ostern, Fr-Mo
+  has_fireworks: false
+- id: wiesbadener-fastnachtsumzug
+  name: Wiesbadener Fastnachtsumzug
+  calendar: events
+  category: parade
+  major: false
+  homepage: https://www.wiesbaden.de/leben-in-wiesbaden/freizeit/feste/fastnacht/fastnachtsumzug.php
+  sources:
+  - https://www.wiesbaden.de/leben-in-wiesbaden/freizeit/feste/fastnacht/fastnachtsumzug.php
+  typical_period: Fastnachtssonntag, 12:11 Uhr
+  has_fireworks: false
+- id: wiesbadener-stadtfest
+  name: Wiesbadener Stadtfest mit Herbstmarkt
+  calendar: events
+  category: stadtfest
+  major: false
+  homepage: https://www.wiesbaden.de/freizeit/feste/wiesbadenerstadtfest
+  sources:
+  - https://www.wiesbaden.de/freizeit/feste/wiesbadenerstadtfest
+  typical_period: letztes Septemberwochenende, Fr-So
+  has_fireworks: false
+- id: wiesbadener-ostermarkt
+  name: Wiesbadener Ostermarkt
+  calendar: events
+  category: saisonmarkt
+  major: false
+  homepage: https://www.wiesbaden.de/freizeit/maerkte/ostermarkt
+  sources:
+  - https://www.wiesbaden.de/freizeit/maerkte/ostermarkt
+  typical_period: März, Fr-So vor Ostern
+  has_fireworks: false

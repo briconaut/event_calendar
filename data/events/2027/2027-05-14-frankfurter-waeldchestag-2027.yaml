@@ -1,0 +1,17 @@
+calendar: events
+category: jahrmarkt
+title: Frankfurter Wäldchestag 2027
+status: geschätzt
+start: '2027-05-14'
+end: '2027-05-18'
+all_day: true
+location: frankfurt
+series: waeldchestag
+venue: Am Oberforsthaus, Stadtwald
+homepage: https://www.visitfrankfurt.travel/en/event/waeldchestag
+sources:
+- https://www.visitfrankfurt.travel/en/event/waeldchestag
+- https://www.festivalsindeutschland.de/festival/frankfurter-waeldchestag
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: Fr vor Pfingsten bis Pfingstdienstag (2026: 22.-26.05.)
+  -> Pfingsten 2027 am 16.05.: 14.-18.05.2027. Kein Termin 2027 veröffentlicht.'

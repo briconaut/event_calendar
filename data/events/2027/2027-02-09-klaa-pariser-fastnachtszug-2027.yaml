@@ -1,0 +1,16 @@
+calendar: events
+category: parade
+title: Klaa Pariser Fastnachtszug 2027
+status: geschätzt
+start: '2027-02-09'
+end: '2027-02-09'
+all_day: true
+location: frankfurt
+series: klaa-paris-fastnachtszug
+venue: Frankfurt-Heddernheim
+homepage: https://www.zuggemeinschaft.de
+sources:
+- https://www.festivalsindeutschland.de/festival/klaa-paris-fastnachtszug-heddernheim
+checked_at: '2026-11-03'
+status_note: 'Geschätzt: Zug am Fastnachtsdienstag um 14:11 Uhr (2026: Di 17.02.);
+  Fastnachtsdienstag 2027 = 09.02. Kein Termin 2027 veröffentlicht.'

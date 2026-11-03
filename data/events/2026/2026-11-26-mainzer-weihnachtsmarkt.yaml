@@ -7,6 +7,10 @@ homepage: https://www.mainz.de/weihnachtsmarkt
 opening_hours: 'Am 23.12. bis 19 Uhr'
 all_day: true
 location: mainz
+description: 'Historischer Weihnachtsmarkt am Fuß des Doms. Teil der
+  Mainzer Weihnachtsstadt: parallel laufen die WinterZeit-Märkte am Schillerplatz, im Hopfengarten,
+  auf dem Bahnhofsvorplatz und im Schloss-Innenhof, die bis 30.12. geöffnet sind.'
 sources:
 - https://www.mainz.de/weihnachtsmarkt
+- https://www.festivalsindeutschland.de/festival/weihnachtsstadt-mainz-historischer-weihnachtsmarkt
 checked_at: '2026-11-03'

@@ -46,3 +46,76 @@ series:
   - https://www.festivalsindeutschland.de/festival/frankfurter-mainfest/2025
   typical_period: erstes Augustwochenende, Fr-Mo
   has_fireworks: true
+- id: waeldchestag
+  name: Frankfurter Wäldchestag
+  calendar: events
+  category: jahrmarkt
+  major: true
+  homepage: https://www.visitfrankfurt.travel/en/event/waeldchestag
+  sources:
+  - https://www.visitfrankfurt.travel/en/event/waeldchestag
+  - https://www.festivalsindeutschland.de/festival/frankfurter-waeldchestag
+  typical_period: Pfingsten, Fr-Di (Pfingstdienstag = Wäldchestag)
+  has_fireworks: false
+- id: rheingauer-weinmarkt-frankfurt
+  name: Rheingauer Weinmarkt auf der Freßgass
+  calendar: events
+  category: weinfest
+  major: false
+  homepage: https://www.visitfrankfurt.travel/en/experience/festival-and-events/rheingau-wine-festival
+  sources:
+  - https://www.visitfrankfurt.travel/en/experience/festival-and-events/rheingau-wine-festival
+  typical_period: Anfang September, zehn Tage Mi-Fr
+  has_fireworks: false
+- id: frankfurter-apfelweinfestival
+  name: Frankfurter Apfelweinfestival
+  calendar: events
+  category: weinfest
+  major: false
+  homepage: https://www.festivalsindeutschland.de/festival/frankfurter-apfelweinfestival
+  sources:
+  - https://www.festivalsindeutschland.de/festival/frankfurter-apfelweinfestival
+  typical_period: August, zehn Tage Fr-So, Roßmarkt
+  has_fireworks: false
+- id: opernplatzfest
+  name: Opernplatzfest
+  calendar: events
+  category: stadtfest
+  major: false
+  homepage: https://www.opernplatzfest.eu
+  sources:
+  - https://www.opernplatzfest.eu
+  - https://www.festivalsindeutschland.de/festival/opernplatzfest-frankfurt
+  typical_period: Juni, zehn Tage
+  has_fireworks: false
+- id: frankfurter-fastnachtszug
+  name: Frankfurter Fastnachtszug
+  calendar: events
+  category: parade
+  major: false
+  homepage: https://www.grosser-rat.de
+  sources:
+  - https://www.festivalsindeutschland.de/festival/frankfurter-fastnachtszug
+  typical_period: Fastnachtssonntag, ca. 12:21 Uhr
+  has_fireworks: false
+- id: klaa-paris-fastnachtszug
+  name: Klaa Pariser Fastnachtszug Heddernheim
+  calendar: events
+  category: parade
+  major: false
+  homepage: https://www.zuggemeinschaft.de
+  sources:
+  - https://www.festivalsindeutschland.de/festival/klaa-paris-fastnachtszug-heddernheim
+  typical_period: Fastnachtsdienstag, 14:11 Uhr
+  has_fireworks: false
+- id: palmengarten-winterlichter
+  name: Winterlichter im Palmengarten
+  calendar: events
+  category: lichtfest
+  major: false
+  homepage: https://www.visitfrankfurt.travel/en/event/winter-lights-winterlichter-at-the-palmengarten
+  sources:
+  - https://www.palmengarten.de
+  - https://www.visitfrankfurt.travel/en/event/winter-lights-winterlichter-at-the-palmengarten
+  typical_period: Ende November/Anfang Dezember bis Mitte Januar, abends 17-21 Uhr
+  has_fireworks: false

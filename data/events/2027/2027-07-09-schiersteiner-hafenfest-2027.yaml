@@ -1,0 +1,16 @@
+calendar: events
+category: stadtfest
+title: Schiersteiner Hafenfest 2027
+status: geschätzt
+start: '2027-07-09'
+end: '2027-07-12'
+all_day: true
+location: schierstein
+series: schiersteiner-hafenfest
+venue: Rheinhafen Schierstein
+homepage: https://www.wiesbaden.de/leben-in-wiesbaden/freizeit/feste/schiersteiner-hafenfest
+sources:
+- https://www.festivalsindeutschland.de/festival/schiersteiner-hafenfest-wiesbaden
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: zweites Juliwochenende Fr-Mo (2026: 10.-13.07.)
+  -> 09.-12.07.2027. Kein Termin 2027 veröffentlicht.'

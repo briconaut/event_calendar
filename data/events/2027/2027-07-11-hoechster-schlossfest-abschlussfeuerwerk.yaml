@@ -1,0 +1,19 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Höchster Schlossfest - Abschlussfeuerwerk
+status: geschätzt
+start: '2027-07-11'
+end: '2027-07-11'
+all_day: true
+time_unknown: true
+location: hoechst
+venue: über dem Main, Höchster Mainufer
+parent: 2027/2027-07-02-hoechster-schlossfest-2027
+sources:
+- https://www.festivalsindeutschland.de/festival/hoechster-schlossfest
+checked_at: '2026-11-03'
+status_note: 'Geschätzt: Abschlussfeuerwerk über dem Main zum Festende (festivalsindeutschland
+  2026: So 12.07.). Widerspruch: eine Suchmaschinen-Zusammenfassung nannte für 2026
+  Fr 10.07. (Beginn Mainuferkerb), nicht an einer Primärquelle belegt. Eingetragen
+  Festsonntag 11.07.2027; Uhrzeit unbekannt.'

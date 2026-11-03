@@ -1,0 +1,15 @@
+name: Wiesbaden-Biebrich
+state: Hessen
+region: rhein-main
+series:
+- id: biebricher-andreasmarkt
+  name: Biebricher Herbst- und Andreasmarkt
+  calendar: events
+  category: jahrmarkt
+  major: false
+  homepage: https://www.wiesbaden.de/stadtlexikon/stadtlexikon-a-z/andreasmarkt
+  sources:
+  - https://www.wiesbaden.de/stadtlexikon/stadtlexikon-a-z/andreasmarkt
+  typical_period: Oktober, Gibber Bleichwiesen (seit 2010 unter Leitung der Gibber
+    Kerbegesellschaft)
+  has_fireworks: false

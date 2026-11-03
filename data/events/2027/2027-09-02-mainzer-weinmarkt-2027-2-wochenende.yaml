@@ -1,0 +1,16 @@
+calendar: events
+category: weinfest
+title: Mainzer Weinmarkt 2027 (2. Wochenende)
+status: bestätigt
+start: '2027-09-02'
+end: '2027-09-05'
+all_day: true
+location: mainz
+series: mainzer-weinmarkt
+venue: Stadtpark Mainz
+homepage: https://www.mainzer-weinmarkt.de
+sources:
+- https://www.mainzer-weinmarkt.de
+checked_at: '2026-11-03'
+status_note: 'Veranstalterseite nennt 2027: 26.-29.08. und 02.-05.09.; beide Wochenenden
+  als eigene Termine.'

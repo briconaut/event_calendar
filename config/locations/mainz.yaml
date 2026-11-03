@@ -23,4 +23,49 @@ series:
   sources:
   - https://www.mainz.de/en/pressemeldungen/Mainz/2026/juni/mainz-feiert-gutenberg-johannisnacht-ueber-zeugt-trotz-grosser-hitze-mit-friedlicher-fest-stimmung
   typical_period: Wochenende um Johannis (Ende Juni), Fr-Mo
+  has_fireworks: true
+- id: mainzer-weinmarkt
+  name: Mainzer Weinmarkt
+  calendar: events
+  category: weinfest
+  major: true
+  homepage: https://www.mainzer-weinmarkt.de
+  sources:
+  - https://www.mainzer-weinmarkt.de
+  - https://www.rheinhessen.de/en/e-mainzer-weinmarkt-2026
+  typical_period: letztes August- und erstes Septemberwochenende, jeweils Do-So, Stadtpark
+  has_fireworks: false
+- id: mainzer-weinufer
+  name: Mainzer WeinUfer
+  calendar: events
+  category: weinfest
+  major: false
+  homepage: https://www.mainzer-weinufer.de
+  sources:
+  - https://www.festivalsindeutschland.de/festival/mainzer-weinufer
+  - https://www.rheinhessen.de/en/e-mainzer-weinufer-2026
+  typical_period: Christi Himmelfahrt bis Sonntag (Do-So), Rheinufer
+  has_fireworks: false
+- id: mainzer-rheinfruehling
+  name: Mainzer Rheinfrühling
+  calendar: events
+  category: jahrmarkt
+  major: false
+  homepage: https://www.mainz.de/en/angebote-entdecken/freizeit/feste-und-veranstaltungen/mainzer-rheinfruehling
+  sources:
+  - https://www.mainz.de/en/pressemeldungen/Mainz/2026/maerz/rheinfruehling
+  - https://www.mainz.de/en/angebote-entdecken/freizeit/feste-und-veranstaltungen/mainzer-rheinfruehling
+  typical_period: Osterferien, ca. 16 Tage (Samstag vor Palmsonntag bis Sonntag nach
+    Ostern)
+  has_fireworks: false
+- id: mainzer-jugendmaskenzug
+  name: Mainzer Kinder- und Jugendmaskenzug
+  calendar: events
+  category: parade
+  major: true
+  homepage: https://www.festivalsindeutschland.de/festival/mainzer-fastnacht-kinder-und-jugendmaskenzug
+  sources:
+  - https://www.festivalsindeutschland.de/festival/mainzer-fastnacht-kinder-und-jugendmaskenzug
+  - https://www.rheinhessen.de/en/e-childrens-and-youth-carnival-parade-2026
+  typical_period: Fastnachtssamstag, 14:11 Uhr
   has_fireworks: false

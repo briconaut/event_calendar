@@ -1,0 +1,16 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Schiersteiner Hafenfest - Abschlussfeuerwerk
+status: geschätzt
+start: 2027-07-12T22:30
+end: null
+all_day: false
+location: schierstein
+venue: Rheinhafen Schierstein (Abschuss vom gegenüberliegenden Rheinufer)
+parent: 2027/2027-07-09-schiersteiner-hafenfest-2027
+sources:
+- https://www.festivalsindeutschland.de/festival/schiersteiner-hafenfest-wiesbaden
+checked_at: '2026-11-03'
+status_note: 'Geschätzt: Feuerwerk traditionell am Festmontag gegen 22:30 Uhr (2026:
+  Mo 13.07.).'

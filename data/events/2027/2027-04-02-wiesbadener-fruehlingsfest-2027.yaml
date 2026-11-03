@@ -1,0 +1,14 @@
+calendar: events
+category: jahrmarkt
+title: Wiesbadener Frühlingsfest 2027
+status: bestätigt
+start: '2027-04-02'
+end: '2027-04-05'
+all_day: true
+location: wiesbaden
+series: wiesbadener-fruehlingsfest
+homepage: https://www.wiesbaden.de/freizeit/feste/fruehlingsfest
+opening_hours: Fr, Sa, Mo 12-23 Uhr, So 14-23 Uhr; Montag Familientag
+sources:
+- https://www.wiesbaden.de/freizeit/feste/fruehlingsfest
+checked_at: '2026-11-03'

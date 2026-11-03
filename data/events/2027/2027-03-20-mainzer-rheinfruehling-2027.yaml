@@ -1,0 +1,18 @@
+calendar: events
+category: jahrmarkt
+title: Mainzer Rheinfrühling 2027
+status: geschätzt
+start: '2027-03-20'
+end: '2027-04-04'
+all_day: true
+location: mainz
+series: mainzer-rheinfruehling
+venue: Rheinufer zwischen Kaisertor und Kurfürstenbrunnen
+homepage: https://www.mainz.de/en/angebote-entdecken/freizeit/feste-und-veranstaltungen/mainzer-rheinfruehling
+sources:
+- https://www.mainz.de/en/pressemeldungen/Mainz/2026/maerz/rheinfruehling
+- https://www.mainz.de/en/angebote-entdecken/freizeit/feste-und-veranstaltungen/mainzer-rheinfruehling
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster 2026 (Sa 28.03.-So 12.04., Ostern 05.04.: Samstag
+  vor Palmsonntag bis Sonntag nach Ostern) -> Ostern 2027 am 28.03.: Sa 20.03.-So
+  04.04.2027. Kein Termin 2027 veröffentlicht.'

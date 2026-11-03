@@ -1,0 +1,16 @@
+calendar: events
+category: parade
+title: Frankfurter Fastnachtszug 2027
+status: geschätzt
+start: '2027-02-07'
+end: '2027-02-07'
+all_day: true
+location: frankfurt
+series: frankfurter-fastnachtszug
+venue: Innenstadt, Start Untermainkai, Ende Römerberg
+homepage: https://www.grosser-rat.de
+sources:
+- https://www.festivalsindeutschland.de/festival/frankfurter-fastnachtszug
+checked_at: '2026-11-03'
+status_note: 'Geschätzt: Zug am Fastnachtssonntag (2026: So 15.02., 12:21 Uhr); Fastnachtssonntag
+  2027 = 07.02. Kein Termin 2027 veröffentlicht.'

@@ -1,0 +1,17 @@
+calendar: events
+category: weinfest
+title: Mainzer WeinUfer 2027
+status: geschätzt
+start: '2027-05-06'
+end: '2027-05-09'
+all_day: true
+location: mainz
+series: mainzer-weinufer
+venue: Rheinufer zwischen Theodor-Heuss-Brücke und Kaisertor
+homepage: https://www.mainzer-weinufer.de
+sources:
+- https://www.festivalsindeutschland.de/festival/mainzer-weinufer
+- https://www.rheinhessen.de/en/e-mainzer-weinufer-2026
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: Christi Himmelfahrt bis Sonntag (2026: Do 14.-So
+  17.05.) -> Do 06.-So 09.05.2027. Kein Termin 2027 veröffentlicht.'

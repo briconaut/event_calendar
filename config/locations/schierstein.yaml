@@ -1,0 +1,14 @@
+name: Wiesbaden-Schierstein
+state: Hessen
+region: rhein-main
+series:
+- id: schiersteiner-hafenfest
+  name: Schiersteiner Hafenfest
+  calendar: events
+  category: stadtfest
+  major: false
+  homepage: https://www.wiesbaden.de/leben-in-wiesbaden/freizeit/feste/schiersteiner-hafenfest
+  sources:
+  - https://www.festivalsindeutschland.de/festival/schiersteiner-hafenfest-wiesbaden
+  typical_period: Juli (2. Wochenende), Fr-Mo, Abschlussfeuerwerk Montag 22:30
+  has_fireworks: true

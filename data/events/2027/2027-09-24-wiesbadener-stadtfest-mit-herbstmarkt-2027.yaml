@@ -1,0 +1,16 @@
+calendar: events
+category: stadtfest
+title: Wiesbadener Stadtfest mit Herbstmarkt 2027
+status: geschätzt
+start: '2027-09-24'
+end: '2027-09-26'
+all_day: true
+location: wiesbaden
+series: wiesbadener-stadtfest
+venue: Innenstadt und Dern'sches Gelände
+homepage: https://www.wiesbaden.de/freizeit/feste/wiesbadenerstadtfest
+sources:
+- https://www.wiesbaden.de/freizeit/feste/wiesbadenerstadtfest
+checked_at: '2026-11-03'
+status_note: 'Geschätzt aus Muster: letztes Septemberwochenende Fr-So (2026: 25.-27.09.)
+  -> 24.-26.09.2027. Kein Termin 2027 veröffentlicht.'
