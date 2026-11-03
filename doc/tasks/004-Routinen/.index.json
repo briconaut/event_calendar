@@ -1,11 +1,11 @@
 {
-  "updated": "2026-11-03T11:20:44.884406+00:00",
+  "updated": "2026-11-03T11:27:02.919375+00:00",
   "objects": {
     "d241a3": {
       "nr": 1,
       "type": "4",
       "name": "Routine Weihnachtsm\u00e4rkte",
-      "status": "~",
+      "status": "R",
       "file": "001-4-d241a3-routine-weihnachtsm-rkte.md",
       "meta": {
         "review": "user",
