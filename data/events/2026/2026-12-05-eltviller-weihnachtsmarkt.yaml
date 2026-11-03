@@ -1,0 +1,15 @@
+calendar: weihnachtsmaerkte
+title: Eltviller Weihnachtsmarkt
+status: bestätigt
+start: '2026-12-05'
+end: '2026-12-06'
+all_day: true
+location: eltville
+sources:
+- https://www.weihnachtsmarkt-eltville.de
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-bingen-am-rhein
+checked_at: '2026-11-03'
+status_note: Veranstalterseite (Eltviller Weihnachtsmarkt e. V.) nennt 05.-06.12.2026 mit Öffnungszeiten;
+  rund um die Pfarrkirche in der Altstadt.
+opening_hours: Sa 05.12. 15-20 Uhr, So 06.12. 12-19 Uhr
+homepage: https://www.weihnachtsmarkt-eltville.de

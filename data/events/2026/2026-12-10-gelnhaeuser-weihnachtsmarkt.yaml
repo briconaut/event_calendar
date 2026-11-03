@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Gelnhäuser Weihnachtsmarkt
+status: angekündigt
+start: '2026-12-10'
+end: '2026-12-13'
+all_day: true
+location: gelnhausen
+sources:
+- https://www.festivalsindeutschland.de/festival/gelnhaeuser-weihnachtsmarkt
+- https://www.mvp.de/hessen/veranstaltungen/weihnachtliche-themenfuehrung-anlaesslich-weihnachtsmarkt-11-12-2026-gelnhausen/
+checked_at: '2026-11-03'
+status_note: Portal (festivalsindeutschland, Stand 20.05.2026) nennt 10.-13.12.2026 (Ober-/Untermarkt);
+  Stadtmarketing-Seite nicht verifiziert.

@@ -1,0 +1,13 @@
+calendar: weihnachtsmaerkte
+title: Oberurseler Weihnachtsmarkt
+status: angekündigt
+start: '2026-11-26'
+end: '2026-11-29'
+all_day: true
+location: oberursel
+sources:
+- https://www.tradefairdates.com/Christmas-market-M10823/Oberursel.html
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+checked_at: '2026-11-03'
+status_note: Portale nennen 26.-29.11.2026 (Veranstalter Stadt Oberursel); städtische Seite nicht verifiziert.
+opening_hours: Do 16-21, Fr/Sa 14-22, So 12-20 Uhr

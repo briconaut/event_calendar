@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Märchenhafte Weihnachtsburg Rheinstein
+status: angekündigt
+start: '2026-11-21'
+end: '2026-12-20'
+all_day: true
+location: trechtingshausen
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-bingen-am-rhein
+checked_at: '2026-11-03'
+status_note: Nur Veranstaltungsportal nennt 21.11.-20.12.2026 (Sa/So); Burg-Website nicht verifiziert.
+opening_hours: Sa/So 12-18 Uhr
