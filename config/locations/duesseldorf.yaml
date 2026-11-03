@@ -1,0 +1,14 @@
+name: Düsseldorf
+state: Nordrhein-Westfalen
+region: rheinland
+series:
+- id: rheinkirmes-duesseldorf
+  name: Größte Kirmes am Rhein (Rheinkirmes)
+  calendar: events
+  category: jahrmarkt
+  major: true
+  homepage: https://www.visitduesseldorf.de/erleben/veranstaltungen/rheinkirmes-duesseldorf
+  sources:
+  - https://www.visitduesseldorf.de/erleben/veranstaltungen/rheinkirmes-duesseldorf
+  typical_period: Mitte/Ende Juli, ca. 10 Tage
+  has_fireworks: true

@@ -1,4 +1,48 @@
 name: Frankfurt am Main
 state: Hessen
 region: rhein-main
-series: []
+series:
+- id: herbst-dippemess
+  name: Herbst-Dippemess
+  calendar: events
+  category: jahrmarkt
+  major: true
+  homepage: https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+  sources:
+  - https://www.festivalsindeutschland.de/festival/herbst-dippemess-frankfurt
+  - https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+  typical_period: September, ca. 17 Tage Fr-So
+  has_fireworks: false
+- id: fruehjahrs-dippemess
+  name: Frühjahrs-Dippemess
+  calendar: events
+  category: jahrmarkt
+  major: true
+  homepage: https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+  sources:
+  - https://www.festivalsindeutschland.de/festival/fruehjahrs-dippemess
+  - https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+  typical_period: Ostern, ca. 24 Tage Fr-So
+  has_fireworks: false
+- id: museumsuferfest
+  name: Museumsuferfest
+  calendar: events
+  category: stadtfest
+  major: true
+  homepage: https://www.museumsufer.de
+  sources:
+  - https://www.visitfrankfurt.travel/fileadmin/Mediendatenbank/Dokumente/PM/PM_MUF_2026.pdf
+  - https://www.visitfrankfurt.travel/en/experience/festival-and-events/museum-embankment-festival
+  typical_period: letztes Augustwochenende, Fr-So
+  has_fireworks: false
+- id: mainfest
+  name: Frankfurter Mainfest
+  calendar: events
+  category: stadtfest
+  major: true
+  homepage: https://www.festivalsindeutschland.de/festival/frankfurter-mainfest
+  sources:
+  - https://www.festivalsindeutschland.de/festival/frankfurter-mainfest
+  - https://www.festivalsindeutschland.de/festival/frankfurter-mainfest/2025
+  typical_period: erstes Augustwochenende, Fr-Mo
+  has_fireworks: false

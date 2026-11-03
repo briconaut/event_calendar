@@ -1,4 +1,14 @@
 name: Wiesbaden
 state: Hessen
 region: rhein-main
-series: []
+series:
+- id: rheingauer-weinwoche
+  name: Rheingauer Weinwoche
+  calendar: events
+  category: weinfest
+  major: false
+  homepage: https://www.wiesbaden.de/microsite/rheingauer-weinwoche/fest/index.php
+  sources:
+  - https://www.wiesbaden.de/microsite/rheingauer-weinwoche/fest/index.php
+  typical_period: August, zehn Tage
+  has_fireworks: false

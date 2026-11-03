@@ -8,6 +8,7 @@ end: null
 all_day: false
 location: frankfurt
 venue: Mainufer zwischen Holbeinsteg und Untermainbrücke
+parent: 2027/2027-08-27-museumsuferfest-frankfurt-2027
 sources:
 - https://www.visitfrankfurt.travel/fileadmin/Mediendatenbank/Dokumente/PM/PM_MUF_2026.pdf
 - https://www.hessenschau.de/kultur/museumsuferfest-frankfurt-2026-was-ist-wichtig-was-wird-geboten-v10,2026-museumsuferfest-faq-100.html

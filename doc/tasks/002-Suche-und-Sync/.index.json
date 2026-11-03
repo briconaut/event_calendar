@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T11:06:06.879371+00:00",
+  "updated": "2026-11-03T11:09:34.664454+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -77,12 +77,12 @@
       "nr": 7,
       "type": "2",
       "name": "Erste Suche Events und Feste",
-      "status": " ",
+      "status": "R",
       "file": "007-2-de5a72-erste-suche-events-und-feste.md",
       "meta": {
-        "review": "user",
         "assignee-type": "agent",
-        "source": "doc/spec.md#Kalender/Events und Feste"
+        "source": "doc/spec.md#Kalender/Events und Feste",
+        "review": "user"
       }
     },
     "33787e": {

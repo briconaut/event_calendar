@@ -5,11 +5,11 @@
 - ID: de5a72
 - Type: 2
 - Number: 007
-- Status:  
+- Status: R
 - Phase: 002-Suche-und-Sync
-- review: user
 - assignee-type: agent
 - source: doc/spec.md#Kalender/Events und Feste
+- review: user
 
 ## Erste Suche Events und Feste
 
@@ -18,3 +18,7 @@
 ## History
 
 - 2026-10-13T11:24:31+00:00: M | Object created
+- 2026-11-03T11:06:34+00:00: M [ ] -> [~] | starting
+- 2026-11-03T11:09:34+00:00: T [~] -> [~] | Suche Events und Feste 11/2026-11/2027 durchgefuehrt: 13 neue Termine im Kalender events (Koelner und Mainzer Rosenmontagszug, Hessentag Idstein, Johannisnacht Mainz, Rheingauer Weinwoche, Rheinkirmes Duesseldorf, Puetzchens Markt Bonn, Wurstmarkt, Backfischfest, Herbst-/Fruehjahrs-Dippemess, Museumsuferfest, Mainfest), 1 Show im Kalender feuerwerke (Rheinkirmes 23.07.2027), parent-Verknuepfung bei Museumsuferfest/Mainfest-Feuerwerk, 3 neue Locations (idstein, duesseldorf, bonn), Serien ergaenzt. Widerspruch Rheinkirmes (16.-25. vs 16.-27.07.) als Schnittmenge 16.-25.07. in status_note. ec.py validate: 0 Fehler, 0 Warnungen; Tests OK. Nicht aufgenommen: Heidelberger Schlossbeleuchtung 2027, Japan-Tag Duesseldorf 2027 (keine Termine), Maimarkt (Messe), Landesgartenschau Oberhessen (Region sonstige). calendar-sync nicht ausgefuehrt.
+- 2026-11-03T11:09:34+00:00: M | review set to user
+- 2026-11-03T11:09:34+00:00: M [~] -> [R] | Suche abgeschlossen, Review durch User noetig. calendar-sync pending: needs user approval

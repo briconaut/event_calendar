@@ -1,0 +1,15 @@
+calendar: events
+category: jahrmarkt
+title: Rheinkirmes Düsseldorf 2027
+status: angekündigt
+start: '2027-07-16'
+end: '2027-07-25'
+all_day: true
+location: duesseldorf
+series: rheinkirmes-duesseldorf
+venue: Oberkasseler Rheinwiesen
+sources:
+- https://www.visitduesseldorf.de/erleben/veranstaltungen/rheinkirmes-duesseldorf
+checked_at: '2026-11-03'
+homepage: https://www.visitduesseldorf.de/erleben/veranstaltungen/rheinkirmes-duesseldorf
+status_note: 'Widerspruch auf visitduesseldorf.de: Seitenkopf nennt 16.-27.07.2027, Fließtext 16.-25.07.2027. Eingetragen ist die Schnittmenge 16.-25.07.2027. Feuerwerk Fr 23.07.2027 ca. 22:30 Uhr, Eintritt frei.'

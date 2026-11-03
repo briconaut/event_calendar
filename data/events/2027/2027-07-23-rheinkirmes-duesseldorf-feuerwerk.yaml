@@ -1,0 +1,15 @@
+calendar: feuerwerke
+show_types:
+- pyro
+title: Rheinkirmes Düsseldorf - Feuerwerk
+status: angekündigt
+start: 2027-07-23T22:30
+end: null
+all_day: false
+location: duesseldorf
+venue: Oberkasseler Rheinwiesen / Rhein bei Düsseldorf
+parent: 2027/2027-07-16-rheinkirmes-duesseldorf-2027
+sources:
+- https://www.visitduesseldorf.de/erleben/veranstaltungen/rheinkirmes-duesseldorf
+checked_at: '2026-11-03'
+status_note: Feuerwerk Fr 23.07.2027 ca. 22:30 Uhr laut visitduesseldorf.de (letzter Kirmes-Freitag); genauer Abschussort nicht angegeben. Eintritt frei.

@@ -1,4 +1,14 @@
 name: Worms
 state: Rheinland-Pfalz
 region: rheinhessen-pfalz
-series: []
+series:
+- id: wormser-backfischfest
+  name: Wormser Backfischfest
+  calendar: events
+  category: stadtfest
+  major: true
+  homepage: https://www.backfischfest.de
+  sources:
+  - https://www.festivalsindeutschland.de/festival/wormser-backfischfest-93-auflage
+  typical_period: Ende August/Anfang September, 9 Tage ab Samstag
+  has_fireworks: true

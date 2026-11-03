@@ -1,0 +1,16 @@
+calendar: events
+category: jahrmarkt
+title: Herbst-Dippemess Frankfurt 2027
+status: geschätzt
+start: '2027-09-10'
+end: '2027-09-26'
+all_day: true
+location: frankfurt
+series: herbst-dippemess
+venue: Festplatz am Ratsweg, Frankfurt-Ostend
+sources:
+- https://www.festivalsindeutschland.de/festival/herbst-dippemess-frankfurt
+- https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+checked_at: '2026-11-03'
+homepage: https://www.visitfrankfurt.travel/en/experience/festival-and-events/dippemess
+status_note: 'Geschätzt aus Muster: 2025 12.-28.09., 2026 11.-27.09. (Fr bis So, 17 Tage). Analog 2027 Fr 10.09.-So 26.09. Kein Termin 2027 veröffentlicht.'

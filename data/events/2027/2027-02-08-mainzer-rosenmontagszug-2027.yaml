@@ -1,0 +1,16 @@
+calendar: events
+category: parade
+title: Mainzer Rosenmontagszug 2027
+status: angekündigt
+start: '2027-02-08'
+end: '2027-02-08'
+all_day: true
+location: mainz
+series: mainzer-rosenmontagszug
+sources:
+- https://www.festivalsindeutschland.de/festival/mainzer-rosenmontagszug
+- https://www.koeln.de/karneval/wann-ist-karneval/
+- https://www.rheinhessen.de/en/e-mainzer-rosenmontagszug-2026-carnival-parade
+checked_at: '2026-11-03'
+homepage: https://www.festivalsindeutschland.de/festival/mainzer-rosenmontagszug
+status_note: Datum aus dem Rosenmontagstermin 2027 (08.02.2027, koeln.de) abgeleitet; Mainzer Zug fand 2026 am Rosenmontag ab 11:11 Uhr statt. Offizielle Mainzer Quelle (Mainzer Carneval-Verein/Stadt) für 2027 noch nicht gefunden; Zugweg und Startzeit offen.

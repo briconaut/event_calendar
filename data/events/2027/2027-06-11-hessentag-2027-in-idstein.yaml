@@ -1,0 +1,15 @@
+calendar: events
+category: grossevent
+title: Hessentag 2027 in Idstein
+status: angekündigt
+start: '2027-06-11'
+end: '2027-06-20'
+all_day: true
+location: idstein
+series: hessentag
+venue: Idstein
+sources:
+- https://www.hessenschau.de/kultur/take-that-kommt-zum-hessentag-2027-nach-idstein-v1,hessentag-244.html
+- https://www.hessenschau.de/gesellschaft/hessentag-2027-idstein-erhaelt-nach-rueckzieher-von-bebra-den-zuschlag-v2,idstein-hessentag-100.html
+checked_at: '2026-11-03'
+status_note: 64. Hessentag, 11.-20.06.2027 laut hessenschau.de (Take That am Eröffnungsabend 11.06.). Quelle ist Lokalpresse, keine offizielle Hessentag-/Stadtseite; dort prüfen. Programm und etwaige Shows noch nicht bekannt.

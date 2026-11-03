@@ -1,4 +1,15 @@
 name: Köln
 state: Nordrhein-Westfalen
 region: rheinland
-series: []
+series:
+- id: koelner-rosenmontagszug
+  name: Kölner Rosenmontagszug
+  calendar: events
+  category: parade
+  major: true
+  homepage: https://www.koeln.de/karneval/rosenmontagszug-koeln/
+  sources:
+  - https://www.koeln.de/karneval/wann-ist-karneval/
+  - https://www.koeln.de/karneval/rosenmontagszug-koeln/
+  typical_period: Rosenmontag (48 Tage vor Ostersonntag), Februar/März
+  has_fireworks: false
