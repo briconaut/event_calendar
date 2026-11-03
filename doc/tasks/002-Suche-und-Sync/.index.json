@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T11:04:47.935822+00:00",
+  "updated": "2026-11-03T11:06:06.879371+00:00",
   "objects": {
     "4e90c3": {
       "nr": 1,
@@ -65,7 +65,7 @@
       "nr": 6,
       "type": "2",
       "name": "Erste Suche Feuerwerke",
-      "status": "R",
+      "status": "X",
       "file": "006-2-9a7221-erste-suche-feuerwerke.md",
       "meta": {
         "assignee-type": "agent",

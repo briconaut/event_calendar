@@ -5,7 +5,7 @@
 - ID: 9a7221
 - Type: 2
 - Number: 006
-- Status: R
+- Status: X
 - Phase: 002-Suche-und-Sync
 - assignee-type: agent
 - source: doc/spec.md#Kalender/Feuerwerke
@@ -24,3 +24,6 @@
 - 2026-11-03T10:49:19+00:00: M [~] -> [R] | Suche abgeschlossen, Review durch User; offen: Heidelberg Schlossbeleuchtung, Bonn, Wurstmarkt, Silvester ohne 2027-Termine
 - 2026-11-03T10:49:29+00:00: T [R] -> [R] | calendar-sync pending: needs user approval
 - 2026-11-03T11:04:47+00:00: T [R] -> [R] | calendar-sync done (User-Freigabe): 8 Feuerwerke angelegt (inkl. Mainfest 02.08.2027), 44 Termine unveraendert, 0 geloescht, 0 Fehler; Pruefabfrage ohne Abweichung.
+- 2026-11-03T11:06:06+00:00: M [R] -> [X] |
+  > USER-APPROVED: Ja, 9a7221 abnehmen und de5a72 starten
+  > Review durch User: Ergebnis akzeptiert
