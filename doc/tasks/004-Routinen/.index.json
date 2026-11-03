@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03T11:49:35.417437+00:00",
+  "updated": "2026-11-03T11:54:40.282767+00:00",
   "objects": {
     "d241a3": {
       "nr": 1,
@@ -17,7 +17,7 @@
       "nr": 2,
       "type": "4",
       "name": "Routine Feuerwerke und Events",
-      "status": "R",
+      "status": "X",
       "file": "002-4-2a8d84-routine-feuerwerke-und-events.md",
       "meta": {
         "review": "user",
@@ -29,7 +29,7 @@
       "nr": 3,
       "type": "4",
       "name": "Routine Rollover",
-      "status": " ",
+      "status": "R",
       "file": "003-4-8b0d95-routine-rollover.md",
       "meta": {
         "review": "user",
