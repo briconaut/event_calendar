@@ -176,8 +176,9 @@ requirements.txt                       # pyyaml, jsonschema
 .claude/skills/<skill>/SKILL.md        # event-search, event-verify, series-rollover, calendar-sync
 config/settings.yaml                   # Kalender-IDs, Regionen, Kategorien, Icons, Horizont
 config/locations/<ort>.yaml            # Orte + Eventserien
+config/series.yaml                     # ortsunabhängige Eventserien (Wanderevents)
 data/events/<jahr>/<datum>-<slug>.yaml # ein Termin = eine Datei
-schemas/{event,location,settings}.schema.json
+schemas/{event,location,series,settings}.schema.json
 tools/ec.py                            # CLI
 tests/
 prompts/*.md                           # fertige Aufträge für Sessions und Routinen
@@ -242,6 +243,26 @@ stehen im Event (`venue`). Events über mehrere Orte hängen an einer Haupt-Loca
 
 Locations sind Konfiguration (sie steuern die Suche), Events sind Daten.
 
+### Ortsunabhängige Serien
+
+Wanderevents mit jährlich wechselndem Austragungsort (Hessentag, Bundes-/Landesgartenschau,
+Rheinland-Pfalz-Tag) stehen nicht an einer Location, sondern in `config/series.yaml`
+(Schema `series.schema.json`). Felder wie bei Serien einer Location, ohne `directions`/`viewpoints`,
+zusätzlich `scope` (Gebiet des Wechsels, z. B. „Hessen“, „Deutschland“) und optional `notes`.
+
+- Jeder Termin hängt an der Location seines Austragungsorts (`location: idstein`, `series: hessentag`);
+  die Regionsregeln gelten je Jahr für diesen Ort.
+- Serien-IDs sind repo-weit eindeutig (Locations und `series.yaml`). Ein Termin findet seine Serie zuerst
+  in seiner Location, sonst in `series.yaml`.
+
+### Pflicht-Serien
+
+Jede Serie ist Pflicht: Wer ein Event garantiert gesucht haben will, legt dafür eine Serie an (notfalls nur
+mit `name` und `calendar`). Bei einem Suchlauf sind die Serien des gesuchten Kalenders Pflicht, bei
+`feuerwerke` zusätzlich alle Serien mit `has_fireworks: true` (gesucht wird die Show). Eine Serie mit
+bestätigtem Termin im Zeitraum gilt als „vorhanden“ und wird nicht neu recherchiert; sonst wird recherchiert.
+`ec.py checklist` liefert diese Liste.
+
 ## Konfiguration
 
 <!-- specctl id=e9f6ad type=Konfig nr=005 status=draft
@@ -256,6 +277,12 @@ history:
 - Regionen und Stufen je Kalender (siehe „Regionen“)
 - Kategorien und Icons
 - Suchhorizont: 12 Monate ab heute; Weihnachtsmärkte immer für die kommende Saison
+- Pflichtquellen (`search.required_sources`): URLs, die jede Suche bzw. Prüfung der genannten Kalender
+  liest – **zusätzlich** zur freien Websuche, nie statt ihr. Je Eintrag `url`, `calendars`, optional
+  `note` und `fallback_url`. Ist eine Quelle nicht lesbar (Bot-Prüfung, JavaScript), wird `fallback_url`,
+  dann eine Websuche mit `site:` versucht; der Bericht weist je Quelle `gelesen`,
+  `teilweise (über Suche)` oder `nicht erreichbar` aus (letzteres mit Warnung), der Lauf bricht nicht ab.
+  Für Funde gelten die Regionsregeln.
 - Darstellung: keine Erinnerungen, Verfügbarkeit „frei“, Farbe grau für `geschätzt`
 
 ## Darstellung im Kalender
@@ -304,10 +331,11 @@ history:
 
 | Befehl | Zweck |
 |---|---|
-| `validate` | Schema, Pflichtfelder, Referenzen (`location`, `series`, `parent`), Zeiten, Region/Stufe zulässig, Dubletten-Verdacht (gleiche Location+Serie, überlappender Zeitraum) |
+| `validate` | Schema, Pflichtfelder, Referenzen (`location`, `series`, `parent`), Serien-IDs repo-weit eindeutig, Zeiten, Region/Stufe zulässig, Dubletten-Verdacht (gleiche Location+Serie, überlappender Zeitraum) |
 | `render [--calendar X] [--from <datum>] [--all]` | Soll-Zustand als kompaktes JSON (Titel, Zeiten, Beschreibung, Farbe, Hash); `--all` schließt vergangene Termine ein |
 | `new-event` / `new-location` | Gerüst mit korrektem Dateinamen/ID |
 | `list [--calendar X] [--status S] [--from <datum>] [--to <datum>] [--json]` | Übersichten, z. B. alle `geschätzt`-Termine der nächsten 3 Monate |
+| `checklist --calendar X [--from <datum>] [--to <datum>]` | Pflichtprogramm eines Suchlaufs als JSON: Pflichtquellen des Kalenders und Pflicht-Serien mit vorhandenen Terminen und Aktion (`vorhanden`/`recherchieren`/`ausgeschlossen`) |
 
 ## Skills
 
@@ -320,8 +348,8 @@ Ablage unter `.claude/skills/` (in Web-Sessions automatisch geladen).
 
 | Skill | Aufgabe |
 |---|---|
-| `event-search` | Neue Termine recherchieren (Filter: Kalender, Zeitraum, Region); Events und ggf. Locations/Serien anlegen; Shows separat mit `parent` |
-| `event-verify` | `geschätzt`/`angekündigt` prüfen, Status hochstufen, Änderungen und Absagen nachziehen, `checked_at` setzen |
+| `event-search` | Neue Termine recherchieren (Filter: Kalender, Zeitraum, Region) in drei Pflichtteilen: Pflicht-Serien, Pflichtquellen, freie Websuche (mindestens eine Suchanfrage je Kalender und zulässiger Region); Bericht mit je einem Abschnitt pro Teil; Events und ggf. Locations/Serien anlegen; Shows separat mit `parent` |
+| `event-verify` | `geschätzt`/`angekündigt` prüfen (Pflichtquellen zusätzlich zu den Termin-Quellen), Status hochstufen, Änderungen und Absagen nachziehen, `checked_at` setzen |
 | `series-rollover` | Aus den Eventserien der Locations die Termine des Folgejahres ableiten und recherchieren |
 | `calendar-sync` | Ablauf gemäß „Synchronisation“ |
 

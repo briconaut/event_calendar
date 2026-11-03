@@ -1,14 +1,5 @@
 name: Idstein
 state: Hessen
 region: rhein-main
-series:
-- id: hessentag
-  name: Hessentag
-  calendar: events
-  category: grossevent
-  major: true
-  sources:
-  - https://www.hessenschau.de/kultur/take-that-kommt-zum-hessentag-2027-nach-idstein-v1,hessentag-244.html
-  - https://www.hessenschau.de/gesellschaft/hessentag-2027-idstein-erhaelt-nach-rueckzieher-von-bebra-den-zuschlag-v2,idstein-hessentag-100.html
-  typical_period: Juni, zehn Tage, wechselnde Hessentagsstadt
-  has_fireworks: false
+notes: Hessentag 2027 – Serie hessentag steht in config/series.yaml (ortsunabhängig).
+series: []
