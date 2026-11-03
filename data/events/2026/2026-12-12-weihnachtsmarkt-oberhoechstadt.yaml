@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Weihnachtsmarkt Oberhöchstadt (Kronberg)
+status: angekündigt
+start: '2026-12-12'
+end: '2026-12-13'
+all_day: true
+location: kronberg
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+checked_at: '2026-11-03'
+status_note: Portal nennt 12.-13.12.2026 (Dalles Platz, Oberhöchstadt; Vorjahr 13.-14.12.2025).
+  Nur ein Wochenende, lokaler Markt; ohne überregionale Bewerbung belegt.

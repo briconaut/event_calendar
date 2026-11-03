@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Silvestermarkt Kapuzinerplanken Mannheim
+status: angekündigt
+start: '2026-12-27'
+end: '2026-12-31'
+all_day: true
+location: mannheim
+sources:
+- https://www.festivalsindeutschland.de/festival/silvestermarkt-kapuzinerplanken-mannheim
+checked_at: '2026-11-03'
+status_note: Portal nennt 27.-31.12.2026 (Quadrate O5/O6, VTM Mannheim; Vorjahr gleicher
+  Zeitraum); vtm-ma.de nicht geprüft.

@@ -7,7 +7,10 @@ all_day: true
 location: boppard
 sources:
 - https://www.festivalsindeutschland.de/festival/bopparder-weihnachtsmarkt-winzerzauber
+- https://www.boppard.de/aktuelles/
 checked_at: '2026-11-03'
-status_note: Portal (festivalsindeutschland) nennt 27.11.-06.12.2026, Veranstalter Tourist-Information
-  Boppard; Programm noch nicht veröffentlicht.
+status_note: 'Konflikt: Portal nennt durchgehend 27.11.-06.12.2026; Stadt Boppard
+  (boppard.de/aktuelles, Beitrag Sesselbahn vom 23.10.2026) nennt ''beide Weihnachtsmarkt-Wochenenden
+  27.-29.11. und 04.-06.12.2026''. Eigene Marktseite ohne Termin; Datum unverändert,
+  offen.'
 opening_hours: So-Do 12-20 Uhr, Fr/Sa 12-22 Uhr

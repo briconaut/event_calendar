@@ -1,0 +1,12 @@
+calendar: weihnachtsmaerkte
+title: Bornheimer Weihnachtsmarkt (Hofheim am Taunus)
+status: angekündigt
+start: '2026-12-05'
+end: '2026-12-06'
+all_day: true
+location: hofheim-am-taunus
+sources:
+- https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
+checked_at: '2026-11-03'
+status_note: Portal nennt 05.-06.12.2026 (Bornheimer Zentrum; Vorjahr 29.-30.11.2025,
+  daher Datum unsicher); Stadtseite ohne Termin. Nur ein Wochenende, lokaler Markt.

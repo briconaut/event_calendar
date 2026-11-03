@@ -1,0 +1,17 @@
+calendar: events
+category: jahrmarkt
+title: Hochheimer Markt
+status: bestätigt
+start: '2026-11-06'
+end: '2026-11-10'
+all_day: true
+location: hochheim
+sources:
+- https://www.hochheim-tourismus.de
+- https://tourismus.wiesbaden.de/downloads/dokumente/Eventkalender-2026.pdf
+- https://www.festivalsindeutschland.de/festival/hochheimer-markt
+checked_at: '2026-11-03'
+homepage: https://www.hochheim-tourismus.de
+status_note: Stadt Hochheim (Tourismus) und Eventkalender 2026 Wiesbaden Rheingau
+  nennen 06.-10.11.2026; 539. Auflage laut Portal, Festgelände Hochheim am Main, Eintritt
+  frei.

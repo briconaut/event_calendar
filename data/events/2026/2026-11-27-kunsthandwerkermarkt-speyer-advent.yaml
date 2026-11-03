@@ -1,0 +1,15 @@
+calendar: weihnachtsmaerkte
+title: Kunsthandwerkermarkt Speyer (Advent)
+status: bestätigt
+start: '2026-11-27'
+end: '2026-12-20'
+all_day: true
+location: speyer
+sources:
+- https://www.speyer.de/de/veranstaltungen/messen-maerkte-und-veranstaltungen/weihnachts-neujahrsmarkt/
+- https://www.festivalsindeutschland.de/festival/kunsthandwerkermarkt-speyer-advent
+checked_at: '2026-11-03'
+opening_hours: Fr 16-20, Sa/So 11-20 Uhr
+status_note: 'Stadt Speyer: Rathausinnenhof/Kulturhof Flachsgasse, vier Adventswochenenden
+  Fr-So (27.-29.11., 4.-6.12., 11.-13.12., 18.-20.12.2026); Teil des Weihnachts- und
+  Neujahrsmarkts.'

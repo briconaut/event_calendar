@@ -1,11 +1,13 @@
 calendar: weihnachtsmaerkte
 title: Königsteiner Weihnachtsmarkt
-status: angekündigt
+status: bestätigt
 start: '2026-12-04'
 end: '2026-12-06'
 all_day: true
 location: koenigstein
 sources:
+- https://www.koenigstein.de/leben-wohnen/weihnachtsmarkt/
 - https://freizeitmonster.de/blog/weihnachtsmaerkte-taunus
 checked_at: '2026-11-03'
-status_note: Nur Veranstaltungsportal nennt 04.-06.12.2026 (Rathausvorplatz/Alter Kurpark); Vorjahr 05.-07.12.2025.
+status_note: 'Stadt Königstein: Fr 04.12. bis So 06.12.2026.'
+opening_hours: Fr 16-21:30, Sa 11-21:30, So 11-19 Uhr

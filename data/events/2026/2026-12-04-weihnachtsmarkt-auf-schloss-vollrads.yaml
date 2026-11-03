@@ -1,12 +1,14 @@
 calendar: weihnachtsmaerkte
 title: Weihnachtsmarkt auf Schloss Vollrads
-status: angekündigt
+status: bestätigt
 start: '2026-12-04'
 end: '2026-12-06'
 all_day: true
 location: oestrich-winkel
 sources:
+- https://www.schlossvollrads.com
 - https://freizeitmonster.de/blog/weihnachtsmaerkte-bingen-am-rhein
 checked_at: '2026-11-03'
-status_note: Nur Veranstaltungsportal nennt 04.-06.12.2026; Veranstalterseite (schlossvollrads.com) ohne
-  Termin. Vorjahr 05.-07.12.2025 (2. Advent).
+status_note: 'Veranstalter (schlossvollrads.com): 10. Vollradser Weihnachtsmarkt,
+  Fr 04.12. bis So 06.12.2026.'
+opening_hours: Fr 16-21, Sa 14-20, So 12-18 Uhr

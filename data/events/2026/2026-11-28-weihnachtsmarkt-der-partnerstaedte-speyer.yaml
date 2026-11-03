@@ -1,0 +1,14 @@
+calendar: weihnachtsmaerkte
+title: Weihnachtsmarkt der Partnerstädte Speyer
+status: angekündigt
+start: '2026-11-28'
+end: '2026-12-20'
+all_day: true
+location: speyer
+sources:
+- https://www.festivalsindeutschland.de/festival/weihnachtsmarkt-der-partnerstaedte-speyer
+- https://www.speyer.de/de/veranstaltungen/messen-maerkte-und-veranstaltungen/weihnachts-neujahrsmarkt/
+checked_at: '2026-11-03'
+status_note: Portal nennt 28.11.-20.12.2026 (Rathaus Speyer, Adventswochenenden);
+  Stadtseite speyer.de nennt je Adventswochenende eine Partnerstadt (Ravenna, Gniezno,
+  Chartres, Chichester), aber kein Gesamtdatum.
